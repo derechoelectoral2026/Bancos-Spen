@@ -1,7 +1,7 @@
 // ============================================================
 //  BANCO DE PREGUNTAS — MÓDULO C · DERECHO ELECTORAL · SPEN INE
 //  Versión: 1.0
-//  Total: 40 preguntas · 13 subáreas · opción múltiple (3 opciones)
+//  Total: 80 preguntas · 13 subáreas · opción múltiple (3 opciones)
 //
 //  Bibliografía oficial:
 //  CPEUM (2025) · LGIPE (2024) · LGPP (2023) · LGSMIME (2024)
@@ -34,14 +34,14 @@ const BANCO_MODULO_C = [
 
   // ── 1.1  Modelo constitucional  (5) ──
   { sa:"1.1", sal:"Modelo constitucional",
-    ref:"CPEUM (2025), Arts. 39, 40 y 41",
-    p:"El Art. 39 CPEUM establece que la soberanía nacional reside esencial y originariamente en el pueblo. El Art. 40 define la forma de gobierno. El Art. 41 fija las bases de la organización política.", pt:"Soberanía y forma de gobierno",
-    q:"¿Cuál es la distinción jurídica entre los Arts. 39 y 40 de la CPEUM en relación con la soberanía y la forma de gobierno?",
-    o:["El Art. 39 reconoce la soberanía popular como fuente del poder público, mientras el Art. 40 establece la forma republicana, democrática, laica y federal en que ese poder se organiza.",
+    ref:"CPEUM (2025), Arts. 39, 40 y 41 — reforma DOF 01-04-2025",
+    p:"El Art. 39 establece que la soberanía reside originariamente en el pueblo. El Art. 40 define la forma de gobierno y, tras la reforma del 1 de abril de 2025, añade dos párrafos que prohíben expresamente toda intervención extranjera: golpes de Estado, injerencias en elecciones, violación del territorio y cualquier investigación extranjera sin autorización del Estado Mexicano.", pt:"Soberanía, forma de gobierno e inviolabilidad frente al exterior",
+    q:"¿Cuál es la distinción jurídica entre los Arts. 39 y 40 CPEUM, considerando la reforma del 1 de abril de 2025?",
+    o:["El Art. 39 reconoce la soberanía popular como fuente del poder; el Art. 40 establece la forma republicana, democrática, laica y federal, y tras la reforma de 2025 prohíbe expresamente injerencias extranjeras en elecciones, golpes de Estado y violación del territorio.",
        "Ambos artículos establecen lo mismo: que el pueblo ejerce su soberanía directamente sin intermediarios.",
        "El Art. 39 aplica solo a las entidades federativas y el Art. 40 al gobierno federal."],
     c:0,
-    ex:"El Art. 39 CPEUM consagra la soberanía originaria del pueblo (fuente del poder); el Art. 40 define la forma institucional en que ese poder se ejerce: República representativa, democrática, laica y federal." },
+    ex:"El Art. 39 consagra la soberanía originaria del pueblo (fuente del poder); el Art. 40 define la forma republicana, democrática, laica y federal. Desde la reforma DOF 01-04-2025, el Art. 40 incorpora además la prohibición expresa de golpes de Estado, injerencias extranjeras en elecciones y violación del territorio nacional." },
 
   { sa:"1.1", sal:"Modelo constitucional",
     ref:"CPEUM (2025), Art. 49",
@@ -66,7 +66,7 @@ const BANCO_MODULO_C = [
     p:"La Constitución distingue las facultades del Congreso en general (Art. 73), las exclusivas de Diputados (Art. 74) y las exclusivas del Senado (Art. 76).", pt:"Facultades exclusivas del Congreso",
     q:"¿Cuál de las siguientes corresponde a una facultad exclusiva del Senado de la República conforme al Art. 76 CPEUM?",
     o:["Aprobar el Presupuesto de Egresos de la Federación.",
-       "Nombrar al titular de la Fiscalía General de la República y ratificar los tratados internacionales.",
+       "Integrar la lista de candidatos y nombrar al titular de la Fiscalía General de la República; y aprobar los tratados internacionales.",
        "Fiscalizar la cuenta pública mediante la Auditoría Superior de la Federación."],
     c:1,
     ex:"El Art. 76 CPEUM otorga al Senado facultades exclusivas como ratificar tratados y nombrar al Fiscal General. Aprobar el Presupuesto y fiscalizar la cuenta pública son facultades exclusivas de la Cámara de Diputados (Art. 74)." },
@@ -450,5 +450,468 @@ const BANCO_MODULO_C = [
        "Solo presentación de currículum vitae y entrevista con el director ejecutivo del área vacante."],
     c:1,
     ex:"El Estatuto del SPEN (Arts. 14–28) establece un proceso de concurso de oposición que incluye: convocatoria pública, verificación de requisitos, examen de conocimientos técnicos, evaluación de habilidades y competencias, entrevista final y resolución del Comité del SPEN, garantizando objetividad e imparcialidad." }
+
+// ============================================================
+//  BANCO DE PREGUNTAS — MÓDULO C · DERECHO ELECTORAL · SPEN INE
+//  Preguntas adicionales — Total añadido: 40 preguntas
+//  Distribución:
+//    1.1 Modelo constitucional      +4
+//    1.2 Poder Judicial             +4
+//    1.3 Ciudadanía                 +4
+//    1.4 Sistema de partidos        +3
+//    2.1 Principios electorales     +2
+//    2.2 Tipos de sistemas          +2
+//    2.3 Autoridades electorales    +3
+//    2.4 Delitos electorales        +2
+//    2.5 Candidaturas independientes +2
+//    2.6 Proceso Electoral Federal  +5
+//    3.1 Conocimientos fund. INE    +2
+//    3.2 Órganos del INE            +4
+//    3.3 SPEN                       +3
+//
+//  INSTRUCCIONES DE USO:
+//    Pega estas entradas dentro del arreglo BANCO_MODULO_C
+//    justo antes del cierre ];
+//    Actualiza el encabezado: Total: 40 → 80 preguntas
+// ============================================================
+
+// ═══════════════════════════════════════════════════════════
+//  BLOQUE 1 · SISTEMA POLÍTICO MEXICANO
+// ═══════════════════════════════════════════════════════════
+
+// ── 1.1  Modelo constitucional  (+4) ──
+
+,{ sa:"1.1", sal:"Modelo constitucional",
+   ref:"CPEUM (2025), Art. 41, Base I",
+   p:"El Art. 41 CPEUM regula la renovación de los poderes Legislativo y Ejecutivo a través de elecciones libres, auténticas y periódicas, y encomienda la organización de esas elecciones al INE y los OPLEs.", pt:"Fundamento electoral del Art. 41",
+   q:"¿Cuál es el mandato constitucional central del Art. 41, Base I CPEUM respecto a los partidos políticos y su relación con la soberanía popular?",
+   o:["Los partidos políticos son la única forma legítima de participación política en México y pueden vetar candidaturas.",
+      "Los partidos políticos son entidades de interés público que tienen como fin promover la participación del pueblo en la vida democrática, contribuyendo a la integración de los órganos de representación política.",
+      "Los partidos políticos son organismos privados que actúan con plena autonomía sin obligaciones ante el Estado."],
+   c:1,
+   ex:"El Art. 41, Base I CPEUM define a los partidos políticos como entidades de interés público con la finalidad de promover la participación ciudadana y contribuir a la integración de la representación nacional. No son entidades privadas ni monopolizan la participación política." }
+
+,{ sa:"1.1", sal:"Modelo constitucional",
+   ref:"CPEUM (2025), Arts. 80 y 83",
+   p:null, pt:null,
+   q:"¿Cuál es el período constitucional del Presidente de la República y bajo qué condición puede extenderse conforme a la CPEUM?",
+   o:["Seis años, sin posibilidad de reelección bajo ninguna circunstancia.",
+      "Cuatro años con posibilidad de una reelección inmediata.",
+      "Seis años; el cargo es improrrogable y no existe reelección para quien haya ocupado el cargo con cualquier carácter."],
+   c:2,
+   ex:"El Art. 83 CPEUM establece que el Presidente durará en su encargo seis años. El principio de no reelección es absoluto: quien haya desempeñado el cargo de Presidente, con cualquier carácter, no podrá volver a ocuparlo jamás." }
+
+,{ sa:"1.1", sal:"Modelo constitucional",
+   ref:"CPEUM (2025), Arts. 1 y 133",
+   p:"El Art. 133 establece la jerarquía normativa en México. El Art. 1 incorpora los tratados internacionales de derechos humanos como parte del parámetro de control constitucional.", pt:"Supremacía constitucional y bloque de convencionalidad",
+   q:"¿Qué establece el principio pro persona reconocido en el Art. 1 CPEUM respecto a la interpretación de los derechos humanos?",
+   o:["Que la norma constitucional siempre prevalece sobre cualquier tratado internacional, sin excepción.",
+      "Que las autoridades deben favorecer en todo tiempo la protección más amplia a las personas, aplicando la norma o interpretación que otorgue mayor protección, sea de fuente nacional o internacional.",
+      "Que solo los jueces federales pueden interpretar los derechos humanos reconocidos en la Constitución."],
+   c:1,
+   ex:"El Art. 1 CPEUM incorpora el principio pro persona: las normas en materia de derechos humanos se interpretarán favoreciendo en todo tiempo la protección más amplia a las personas. Esto obliga a todas las autoridades —incluidas las electorales— a aplicar la norma más protectora, sea nacional o convencional." }
+
+,{ sa:"1.1", sal:"Modelo constitucional",
+   ref:"CPEUM (2025), Arts. 115 y 116",
+   p:null, pt:null,
+   q:"¿Cuál es la diferencia entre el régimen municipal regulado en el Art. 115 CPEUM y el régimen de los estados federativos regulado en el Art. 116?",
+   o:["El Art. 115 establece que los municipios son el nivel básico de gobierno con personalidad jurídica y patrimonio propios; el Art. 116 regula la organización interna de los poderes de los estados.",
+      "Ambos artículos regulan lo mismo: la forma en que los estados organizan su gobierno local.",
+      "El Art. 115 aplica solo a la Ciudad de México; el Art. 116 a los demás estados."],
+   c:0,
+   ex:"El Art. 115 regula el municipio libre como base de la división territorial y de la organización política de los estados, reconociéndolo como persona jurídica con hacienda propia. El Art. 116 establece los principios que deben seguir las constituciones y leyes de los estados en materia de organización de los poderes locales." }
+
+// ── 1.2  Poder Judicial  (+4) ──
+
+,{ sa:"1.2", sal:"Poder Judicial",
+   ref:"CPEUM (2025), Arts. 94 y 95 — reforma DOF 15-09-2024",
+   p:null, pt:null,
+   q:"¿Cuántos ministros integran la Suprema Corte de Justicia de la Nación y cuántos años dura su encargo conforme a la CPEUM vigente tras la reforma judicial de 2024?",
+   o:["Once ministros con encargo de quince años no renovable.",
+      "Nueve ministros con encargo de doce años no renovable, elegidos por voto popular directo.",
+      "Siete ministros con encargo de seis años renovables por una ocasión."],
+   c:1,
+   ex:"El Art. 94 CPEUM (reforma DOF 15-09-2024) establece que la SCJN se compondrá de <strong>nueve</strong> integrantes. El Art. 95 fija su encargo en <strong>doce años</strong> sin reelección. La reforma sustituyó la designación presidencial por la elección directa ciudadana." }
+
+,{ sa:"1.2", sal:"Poder Judicial",
+   ref:"LGSMIME (2024), Arts. 3 y 4",
+   p:"El sistema de medios de impugnación en materia electoral (LGSMIME) regula los instrumentos para garantizar la constitucionalidad y legalidad de los actos electorales.", pt:"Objeto del sistema de impugnación",
+   q:"¿Cuál es la diferencia entre el principio de definitividad y el principio de concentración del sistema de medios de impugnación electoral?",
+   o:["La definitividad obliga a agotar instancias previas antes de acudir al TEPJF; la concentración prohíbe impugnar el mismo acto ante más de una autoridad simultáneamente.",
+      "Ambos principios son equivalentes y establecen que solo el TEPJF puede resolver impugnaciones.",
+      "La definitividad impide la impugnación de actos firmes; la concentración exige tramitar todos los medios ante un solo órgano."],
+   c:0,
+   ex:"La <strong>definitividad</strong> exige que se agoten los medios ordinarios de defensa antes de acudir al TEPJF. La <strong>concentración</strong> prohíbe que un mismo acto sea impugnado simultáneamente ante autoridades distintas, evitando resoluciones contradictorias." }
+
+,{ sa:"1.2", sal:"Poder Judicial",
+   ref:"LGSMIME (2024), Arts. 79–93",
+   p:null, pt:null,
+   q:"¿Qué es el Juicio de Revisión Constitucional Electoral (JRC) y quién puede promoverlo?",
+   o:["Es el medio para que ciudadanos impugnen actos del INE que vulneren sus derechos políticos.",
+      "Es el medio de impugnación para combatir actos o resoluciones definitivas de las autoridades locales electorales que violen la Constitución, promovido exclusivamente por partidos políticos.",
+      "Es el recurso interno del TEPJF para revisar sus propias sentencias."],
+   c:1,
+   ex:"El JRC (Arts. 79–93 LGSMIME) es el medio para impugnar actos o resoluciones definitivas de autoridades electorales locales que sean determinantes para el desarrollo del proceso o el resultado de las elecciones, y solo pueden promoverlo los partidos políticos con registro." }
+
+,{ sa:"1.2", sal:"Poder Judicial",
+   ref:"CPEUM (2025), Art. 99; TEPJF",
+   p:null, pt:null,
+   q:"¿Qué Sala del TEPJF tiene competencia para calificar la elección de Presidente de los Estados Unidos Mexicanos?",
+   o:["La Sala Superior, mediante la declaración de validez de la elección presidencial y el otorgamiento de la constancia de mayoría.",
+      "Las Salas Regionales, cada una para su respectiva circunscripción.",
+      "El Consejo General del INE es quien califica definitivamente la elección presidencial."],
+   c:0,
+   ex:"El Art. 99 CPEUM reserva a la Sala Superior del TEPJF la calificación de la elección presidencial: valida o anula la elección y otorga la constancia de mayoría. Es la única actuación en la que el TEPJF actúa como autoridad definitiva en la materia con efecto erga omnes." }
+
+// ── 1.3  Ciudadanía  (+4) ──
+
+,{ sa:"1.3", sal:"Ciudadanía",
+   ref:"CPEUM (2025), Art. 34",
+   p:null, pt:null,
+   q:"¿Qué requisito establece el Art. 34 CPEUM para la adquisición de la ciudadanía mexicana?",
+   o:["Tener 21 años cumplidos y haber concluido la educación secundaria.",
+      "Tener 18 años cumplidos y tener un modo honesto de vivir.",
+      "Tener 18 años cumplidos, estar inscrito en el Registro Federal de Electores y contar con credencial para votar."],
+   c:1,
+   ex:"El Art. 34 CPEUM establece que son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan los requisitos de haber cumplido 18 años y tener un modo honesto de vivir. La inscripción en el padrón es consecuencia de la ciudadanía, no su requisito." }
+
+,{ sa:"1.3", sal:"Ciudadanía",
+   ref:"CPEUM (2025), Art. 35, fracc. I y II",
+   p:"El Art. 35 CPEUM reconoce como prerrogativas ciudadanas el derecho a votar y el derecho a ser votado. Estos derechos tienen condiciones de ejercicio distintas.", pt:"Votar y ser votado",
+   q:"¿Cuál es la diferencia entre los requisitos para ejercer el derecho a votar y los requisitos para ser candidato a Diputado Federal conforme a la CPEUM?",
+   o:["Ambos derechos solo requieren tener 18 años y ser ciudadano mexicano.",
+      "Para votar basta ser ciudadano mexicano con credencial vigente; para ser candidato a Diputado Federal se requiere además ser mexicano por nacimiento, tener 18 años cumplidos el día de la elección (reforma DOF 06-06-2023) y cumplir los demás requisitos del Art. 55 CPEUM.",
+      "Para ser candidato a Diputado solo se requiere ser mayor de 18 años y estar registrado ante el INE."],
+   c:1,
+   ex:"El Art. 35 reconoce el derecho a votar (ciudadanía + credencial) y a ser votado. Para Diputado Federal el Art. 55 exige: mexicano por nacimiento, 21 años al día de la elección, vecindad en el distrito o la entidad, y no estar en los supuestos de inelegibilidad." }
+
+,{ sa:"1.3", sal:"Ciudadanía",
+   ref:"CPEUM (2025), Art. 35, fracc. VI",
+   p:null, pt:null,
+   q:"¿Qué es la revocación de mandato y qué porcentaje del listado nominal debe solicitarla para que sea convocada conforme al Art. 35 CPEUM?",
+   o:["Es un mecanismo para que el Congreso remueva al Presidente; lo solicitan 150 diputados.",
+      "Es el derecho ciudadano a solicitar la terminación anticipada del encargo del Presidente de la República, y para convocarse requiere la petición de al menos el 3% de los ciudadanos inscritos en el listado nominal.",
+      "Es el derecho ciudadano a disolver el Congreso; lo solicitan gobernadores de al menos 16 estados."],
+   c:1,
+   ex:"El Art. 35, fracc. IX CPEUM reconoce la revocación de mandato presidencial. Para que proceda la convocatoria se requiere la petición de al menos el 3% de los ciudadanos inscritos en el listado nominal, con representación en al menos 17 entidades federativas." }
+
+,{ sa:"1.3", sal:"Ciudadanía",
+   ref:"CPEUM (2025), Art. 36, fracc. III",
+   p:null, pt:null,
+   q:"¿Cuál es la obligación ciudadana respecto a la función electoral que establece el Art. 36, fracc. III CPEUM?",
+   o:["Votar en todas las elecciones federales, estatales y municipales sin excepción.",
+      "Desempeñar los cargos y funciones electorales para los que sean designados, incluyendo el cargo de funcionario de mesa directiva de casilla.",
+      "Financiar las campañas políticas del partido de su preferencia."],
+   c:1,
+   ex:"El Art. 36, fracc. III CPEUM establece como obligación ciudadana desempeñar los cargos de elección popular y los de designación de cualquier género que sean electorales, como la función de funcionario de casilla, que es de carácter obligatorio para los ciudadanos sorteados." }
+
+// ── 1.4  Sistema de partidos en México  (+3) ──
+
+,{ sa:"1.4", sal:"Sistema de partidos en México",
+   ref:"LGPP (2023), Arts. 50–58",
+   p:null, pt:null,
+   q:"¿Cuáles son los documentos básicos que todo partido político nacional está obligado a tener conforme a la LGPP?",
+   o:["Únicamente los estatutos internos aprobados por la mayoría de sus militantes.",
+      "Declaración de principios, programa de acción y estatutos, que deben ser congruentes entre sí y con los principios democráticos.",
+      "Solo el programa de gobierno y el padrón de afiliados actualizado."],
+   c:1,
+   ex:"El Art. 50 LGPP establece que los partidos políticos nacionales deben contar con: declaración de principios (define su ideología), programa de acción (estrategias para realizarlos) y estatutos (normas internas de organización y funcionamiento). Los tres documentos son obligatorios y deben ser congruentes entre sí." }
+
+,{ sa:"1.4", sal:"Sistema de partidos en México",
+   ref:"LGPP (2023), Art. 94, fracc. I",
+   p:"La LGPP establece causas de pérdida del registro de los partidos políticos nacionales, entre ellas el no obtener el mínimo de votación en una elección federal ordinaria.", pt:"Pérdida del registro partidista",
+   q:"¿Qué porcentaje de la votación válida emitida debe obtener un partido político nacional en una elección federal ordinaria para conservar su registro?",
+   o:["El 1% de la votación válida emitida en cualquiera de las elecciones para las que haya postulado candidatos.",
+      "El 3% de la votación válida emitida en alguna de las elecciones de Diputados, Senadores o Presidente.",
+      "El 5% de la votación nacional emitida en las elecciones de Diputados por representación proporcional."],
+   c:1,
+   ex:"El Art. 94, fracc. I LGPP establece que la pérdida del registro ocurre cuando el partido no obtiene el 3% de la votación válida emitida en alguna de las elecciones para Diputados Federales, Senadores o Presidente en la que haya participado." }
+
+,{ sa:"1.4", sal:"Sistema de partidos en México",
+   ref:"LGPP (2023), Arts. 59–79",
+   p:null, pt:null,
+   q:"¿Qué es el financiamiento público ordinario de los partidos políticos y cómo se distribuye entre ellos conforme a la LGPP?",
+   o:["Es el financiamiento que reciben solo durante las campañas, distribuido en partes iguales entre todos los partidos.",
+      "Es el financiamiento permanente destinado al sostenimiento de sus actividades ordinarias, cuyo monto se calcula con base en el número de ciudadanos inscritos en el padrón y se distribuye 30% de forma igualitaria y 70% en proporción a los votos obtenidos en la última elección.",
+      "Es el financiamiento que otorgan los estados a los partidos que participan en elecciones locales."],
+   c:1,
+   ex:"El Art. 51 LGPP establece la fórmula del financiamiento público ordinario: se multiplica el número de ciudadanos inscritos en el padrón por el 65% del valor de la UMA. El total se distribuye: 30% igualitariamente entre todos los partidos y 70% en proporción a su porcentaje de votos en la elección previa." }
+
+// ═══════════════════════════════════════════════════════════
+//  BLOQUE 2 · SISTEMA ELECTORAL MEXICANO
+// ═══════════════════════════════════════════════════════════
+
+// ── 2.1  Principios del sistema electoral  (+2) ──
+
+,{ sa:"2.1", sal:"Principios del sistema electoral",
+   ref:"CPEUM (2025), Art. 41, Base V",
+   p:null, pt:null,
+   q:"¿Cuál es la diferencia entre los principios de <em>legalidad</em> e <em>independencia</em> que rigen la función electoral del INE?",
+   o:["La legalidad exige que la autoridad electoral actúe sin favoritismos; la independencia exige que sus actos sean verificables.",
+      "La legalidad exige que todo acto de la autoridad electoral tenga fundamento en una norma jurídica expresa; la independencia exige que la autoridad electoral tome sus decisiones sin estar sujeta a mandatos de otros poderes o actores políticos.",
+      "Ambos principios son sinónimos e intercambiables en la práctica electoral."],
+   c:1,
+   ex:"La <strong>legalidad</strong> sujeta a la autoridad al principio de que solo puede hacer lo que la ley expresamente le permite. La <strong>independencia</strong> garantiza que sus decisiones no sean condicionadas por ningún poder externo, partido político o gobierno, preservando su autonomía funcional." }
+
+,{ sa:"2.1", sal:"Principios del sistema electoral",
+   ref:"CPEUM (2025), Art. 41, Base V; LGIPE (2024)",
+   p:null, pt:null,
+   q:"¿Qué significa el principio de <em>objetividad</em> en el contexto de la función electoral del INE?",
+   o:["Que el INE debe privilegiar los intereses de los partidos mayoritarios al tomar decisiones.",
+      "Que las normas y mecanismos electorales deben garantizar igual trato a todos los participantes del proceso, sin interpretaciones subjetivas que favorezcan a alguna de las partes.",
+      "Que el INE solo puede actuar cuando tiene certeza matemática del resultado electoral."],
+   c:1,
+   ex:"El principio de <strong>objetividad</strong> obliga a la autoridad electoral a que sus normas, criterios y mecanismos garanticen la igualdad de condiciones y el igual trato a todos los actores políticos, evitando interpretaciones o decisiones que favorezcan subjetivamente a alguna de las partes." }
+
+// ── 2.2  Tipos de sistemas electorales  (+2) ──
+
+,{ sa:"2.2", sal:"Tipos de sistemas electorales",
+   ref:"CPEUM (2025), Arts. 52–54; PRU Cuad. N°15",
+   p:null, pt:null,
+   q:"¿Cuál es la diferencia entre el principio de mayoría relativa y el principio de representación proporcional para la elección de Diputados Federales?",
+   o:["En mayoría relativa gana el candidato con más votos en un distrito uninominal; en representación proporcional los escaños se asignan a las listas de partido en circunscripciones plurinominales según el porcentaje de votos obtenidos.",
+      "Ambos principios producen el mismo resultado: el partido con más votos obtiene todos los escaños.",
+      "La representación proporcional solo aplica para la elección de Senadores, no de Diputados."],
+   c:0,
+   ex:"La <strong>mayoría relativa</strong> premia al candidato más votado en un distrito uninominal (300 en México). La <strong>representación proporcional</strong> asigna los 200 diputados restantes mediante listas regionales en 5 circunscripciones, según el porcentaje de votos de cada partido, buscando mayor equidad en la representación." }
+
+,{ sa:"2.2", sal:"Tipos de sistemas electorales",
+   ref:"CPEUM (2025), Art. 56; LGIPE (2024)",
+   p:"El Senado de la República se integra por 128 senadores bajo tres principios distintos de elección.", pt:"Integración del Senado",
+   q:"¿Cómo se integra el Senado de la República conforme al Art. 56 CPEUM y cuántos senadores corresponden a cada principio?",
+   o:["128 senadores elegidos todos por mayoría relativa en cada entidad federativa.",
+      "64 senadores de mayoría relativa (2 por entidad), 32 de primera minoría (1 por entidad) y 32 por representación proporcional mediante lista nacional.",
+      "96 senadores de mayoría relativa y 32 por representación proporcional en circunscripciones regionales."],
+   c:1,
+   ex:"El Art. 56 CPEUM establece 3 senadores por entidad (2 mayoría relativa + 1 primera minoría) = 96, más 32 electos por representación proporcional mediante una lista nacional, sumando 128 en total. La primera minoría corresponde al partido que quede en segundo lugar en la entidad." }
+
+// ── 2.3  Autoridades electorales  (+3) ──
+
+,{ sa:"2.3", sal:"Autoridades electorales",
+   ref:"LGIPE (2024), Art. 41, Base V Apdo. D",
+   p:null, pt:null,
+   q:"¿Cuál es la función del Tribunal Electoral del Poder Judicial de la Federación (TEPJF) respecto a los actos del INE?",
+   o:["El TEPJF puede instruir al INE sobre cómo debe organizar las elecciones en tiempo real.",
+      "El TEPJF es la máxima autoridad jurisdiccional para resolver las impugnaciones contra los actos y resoluciones del INE, pero no puede sustituir al INE en sus funciones administrativas.",
+      "El TEPJF y el INE son el mismo órgano electoral con distintas denominaciones."],
+   c:1,
+   ex:"El TEPJF (Art. 99 CPEUM) es la máxima autoridad jurisdiccional en materia electoral: revisa y puede anular actos del INE mediante los medios de impugnación, pero no puede suplantar las funciones organizativas del INE. La distinción entre función administrativa (INE) y jurisdiccional (TEPJF) es estructural." }
+
+,{ sa:"2.3", sal:"Autoridades electorales",
+   ref:"LGIPE (2024), Arts. 44 y 45",
+   p:null, pt:null,
+   q:"¿Quién designa a los Consejeros Electorales del Consejo General del INE y por qué período duran en su encargo?",
+   o:["Son designados por el Presidente de la República con ratificación del Senado por un período de 9 años renovables.",
+      "Son designados por la Cámara de Diputados mediante el voto de las dos terceras partes de sus miembros presentes, por un período de 9 años escalonados sin posibilidad de reelección.",
+      "Son designados por el Senado de la República por mayoría simple, por un período de 6 años renovables una vez."],
+   c:1,
+   ex:"El Art. 41 CPEUM y los Arts. 44–45 LGIPE establecen que los Consejeros Electorales del INE son designados por la Cámara de Diputados con el voto de las dos terceras partes de sus miembros presentes, por períodos de 9 años escalonados y sin posibilidad de reelección, garantizando autonomía e independencia." }
+
+,{ sa:"2.3", sal:"Autoridades electorales",
+   ref:"LGIPE (2024), Art. 41 Base V Apdo. A; CPEUM Art. 41",
+   p:null, pt:null,
+   q:"¿Cuál es la diferencia entre la <em>competencia</em> del INE y la de los OPLEs en materia de organización electoral?",
+   o:["El INE organiza las elecciones federales y los OPLEs organizan las elecciones locales, con posibilidad de que el INE asuma o atraiga funciones locales en supuestos definidos por la ley.",
+      "El INE y los OPLEs comparten exactamente las mismas competencias sin distinción.",
+      "Los OPLEs son dependencias del INE sin personalidad jurídica propia."],
+   c:0,
+   ex:"El INE es competente para organizar las elecciones federales (Presidente, Diputados y Senadores). Los OPLEs son órganos públicos autónomos locales competentes para las elecciones estatales y municipales. Sin embargo, el INE puede asumir funciones del OPLE o atraer casos específicos en los supuestos previstos en la LGIPE." }
+
+// ── 2.4  Delitos electorales  (+2) ──
+
+,{ sa:"2.4", sal:"Delitos electorales",
+   ref:"LGMDE (2021), Art. 7",
+   p:null, pt:null,
+   q:"¿Cuál de las siguientes conductas constituye un delito electoral tipificado en la LGMDE cuando es cometida por un ciudadano?",
+   o:["Abstenerse de votar sin justificación legal.",
+      "Votar más de una vez en la misma elección o hacerlo a sabiendas de no tener derecho a ello.",
+      "Afiliarse a un partido político distinto al que apoyó en la elección anterior."],
+   c:1,
+   ex:"El Art. 7 LGMDE tipifica como delito electoral, entre otras conductas, votar más de una vez en la misma elección (voto múltiple) o votar sin tener derecho a ello. La abstención no está tipificada como delito; tampoco el cambio de afiliación partidista." }
+
+,{ sa:"2.4", sal:"Delitos electorales",
+   ref:"LGMDE (2021), Arts. 11–12",
+   p:null, pt:null,
+   q:"¿Qué conducta de un funcionario electoral constituye delito tipificado en la LGMDE?",
+   o:["No asistir a la capacitación electoral obligatoria sin causa justificada.",
+      "Negar injustificadamente la instalación de una casilla electoral en el lugar y hora señalados, o abandonarla sin causa justificada durante la jornada.",
+      "Cometer errores aritméticos al realizar el cómputo de votos."],
+   c:1,
+   ex:"El Art. 11 LGMDE tipifica como delito las conductas dolosas de funcionarios electorales como la negativa injustificada de instalar casilla, el abandono sin causa de la casilla durante la jornada, o alterar los resultados en las actas. Los errores aritméticos involuntarios no son delito sino irregularidad subsanable." }
+
+// ── 2.5  Candidaturas independientes  (+2) ──
+
+,{ sa:"2.5", sal:"Candidaturas independientes",
+   ref:"LGIPE (2024), Arts. 357–358",
+   p:null, pt:null,
+   q:"¿Cuáles son las principales restricciones que la LGIPE establece para quien aspira a una candidatura independiente?",
+   o:["No pueden ser ciudadanos con militancia activa en partido político al momento de la manifestación de intención.",
+      "Solo pueden aspirar ciudadanos que hayan ocupado un cargo público en los últimos 4 años.",
+      "Solo pueden participar en elecciones municipales, no federales."],
+   c:0,
+   ex:"El Art. 357 LGIPE prohíbe que quien aspire a una candidatura independiente sea militante activo de algún partido político al momento de presentar su manifestación de intención. Esto busca preservar el carácter genuinamente independiente de la candidatura, distinto del mecanismo partidista." }
+
+,{ sa:"2.5", sal:"Candidaturas independientes",
+   ref:"LGIPE (2024), Arts. 363–368",
+   p:null, pt:null,
+   q:"¿Cuál es el financiamiento público al que tienen derecho los candidatos independientes y cómo se determina?",
+   o:["No tienen derecho a financiamiento público; solo pueden financiarse con aportaciones privadas.",
+      "Tienen derecho a financiamiento público equivalente al que corresponde al partido político que haya obtenido el mayor número de votos en la elección inmediata anterior, en la misma fórmula o cargo.",
+      "El Consejo General del INE determina libremente el monto del financiamiento para cada candidatura independiente sin fórmula establecida."],
+   c:1,
+   ex:"El Art. 368 LGIPE establece que los candidatos independientes tienen derecho a financiamiento público equivalente al del partido político que más financiamiento reciba para la misma elección. Esto garantiza condiciones de competencia mínimas para los candidatos no partidistas." }
+
+// ── 2.6  Proceso Electoral Federal  (+5) ──
+
+,{ sa:"2.6", sal:"Proceso Electoral Federal",
+   ref:"LGIPE (2024), Arts. 218–226",
+   p:null, pt:null,
+   q:"¿Cuándo inicia y cuándo concluye el proceso electoral federal ordinario conforme a la LGIPE?",
+   o:["Inicia el primer día de octubre del año previo a la elección y concluye con la declaración de validez de la elección presidencial por el TEPJF.",
+      "Inicia en enero del año de la elección y concluye al instalarse el nuevo Congreso.",
+      "Inicia el día de la convocatoria pública emitida por el INE y concluye el día de la jornada electoral."],
+   c:0,
+   ex:"El Art. 225 LGIPE establece que el proceso electoral federal ordinario inicia en octubre del año previo a la elección y concluye con las declaraciones de validez de las elecciones o, en su caso, con las resoluciones del TEPJF que pongan fin a los medios de impugnación." }
+
+,{ sa:"2.6", sal:"Proceso Electoral Federal",
+   ref:"LGIPE (2024), Arts. 238–258",
+   p:"El registro de candidaturas es una fase fundamental del proceso electoral en la que el INE verifica el cumplimiento de los requisitos de elegibilidad.", pt:"Registro de candidaturas",
+   q:"¿Cuál es la consecuencia de que un partido político no registre candidatos para todos los distritos uninominales en los que participa?",
+   o:["Pierde automáticamente su registro como partido político nacional.",
+      "El partido no pierde su registro, pero el INE puede sancionarlo con la reducción de su financiamiento público ordinario.",
+      "No existe sanción; los distritos sin candidato del partido simplemente se contestan sin ese contendiente."],
+   c:1,
+   ex:"Conforme a la LGIPE, el no registro de candidatos en todos los distritos en los que participa no implica pérdida del registro partidista, pero el INE puede imponer sanciones económicas. El partido pierde la posibilidad de competir en esos distritos y puede verse afectado en el cómputo para financiamiento futuro." }
+
+,{ sa:"2.6", sal:"Proceso Electoral Federal",
+   ref:"LGIPE (2024), Arts. 184–210; REINE (2025)",
+   p:null, pt:null,
+   q:"¿Cuál es la diferencia entre la capacitación electoral y la educación cívica en el contexto del proceso electoral federal?",
+   o:["Son conceptos idénticos; la ley los usa indistintamente.",
+      "La capacitación electoral está dirigida a los funcionarios de casilla y al personal del INE para garantizar la correcta operación del proceso; la educación cívica es un programa permanente orientado a la ciudadanía para fomentar valores democráticos.",
+      "La educación cívica es obligatoria; la capacitación electoral es voluntaria para los funcionarios de casilla."],
+   c:1,
+   ex:"La <strong>capacitación electoral</strong> (Arts. 184–210 LGIPE) es la instrucción específica a ciudadanos sorteados para ser funcionarios de casilla y al personal del INE, orientada a la correcta operación de la jornada. La <strong>educación cívica</strong> es un programa permanente de formación democrática para toda la ciudadanía." }
+
+,{ sa:"2.6", sal:"Proceso Electoral Federal",
+   ref:"LGIPE (2024), Arts. 290–310",
+   p:"La jornada electoral comprende la instalación de casillas, votación, escrutinio y cómputo en casilla, y el traslado de paquetes electorales.", pt:"Jornada electoral",
+   q:"¿En qué orden se realizan las actividades en una mesa directiva de casilla durante la jornada electoral?",
+   o:["Votación, instalación de la casilla, escrutinio y cómputo, traslado del paquete electoral.",
+      "Instalación de la casilla, apertura y recepción de la votación, cierre de la votación, escrutinio y cómputo en casilla, llenado de actas y traslado del paquete al Consejo Distrital.",
+      "Recepción del paquete electoral, conteo de boletas, apertura al público, cierre y traslado."],
+   c:1,
+   ex:"La LGIPE establece el orden obligatorio: instalación de la casilla → apertura y recepción de votos → cierre de la votación (a las 18:00 h, salvo filas) → escrutinio y cómputo en casilla → llenado y firma de actas → empaque del material y traslado al Consejo Distrital." }
+
+,{ sa:"2.6", sal:"Proceso Electoral Federal",
+   ref:"LGIPE (2024), Arts. 327–340",
+   p:null, pt:null,
+   q:"¿Cuáles son las causas por las que puede declararse la nulidad de una votación recibida en casilla conforme a la LGIPE?",
+   o:["Solo la instalación de la casilla en lugar distinto al señalado anula automáticamente la votación.",
+      "Las causas incluyen: instalación de casilla en lugar diferente sin causa justificada, alteración grave de los resultados en las actas, privación del derecho al voto a ciudadanos sin causa legal, y recepción de votación por personas no autorizadas.",
+      "Cualquier irregularidad durante la jornada, por menor que sea, anula automáticamente la votación de la casilla."],
+   c:1,
+   ex:"Los Arts. 327–340 LGIPE establecen un catálogo taxativo de causas de nulidad de la votación en casilla: instalación en lugar distinto sin causa justificada, alteración de resultados, privación del derecho al voto, y votación por funcionarios no autorizados, entre otras. Las irregularidades menores no producen nulidad automática." }
+
+// ═══════════════════════════════════════════════════════════
+//  BLOQUE 3 · INSTITUTO NACIONAL ELECTORAL
+// ═══════════════════════════════════════════════════════════
+
+// ── 3.1  Conocimientos fundamentales del INE  (+2) ──
+
+,{ sa:"3.1", sal:"Conocimientos fundamentales del INE",
+   ref:"CPEUM (2025), Art. 41; DOF 10/02/2014",
+   p:null, pt:null,
+   q:"¿Cuáles son los principios rectores que rigen la actuación del INE conforme al Art. 41 CPEUM?",
+   o:["Eficiencia, eficacia, economía, honradez y transparencia.",
+      "Certeza, legalidad, independencia, imparcialidad, máxima publicidad y objetividad.",
+      "Democracia, representatividad, pluralismo, inclusión y paridad."],
+   c:1,
+   ex:"El Art. 41, Base V CPEUM establece que la función electoral del INE se rige por los principios de: certeza, legalidad, independencia, imparcialidad, máxima publicidad y objetividad. Estos principios deben guiar todas las decisiones y actuaciones de la institución." }
+
+,{ sa:"3.1", sal:"Conocimientos fundamentales del INE",
+   ref:"LGIPE (2024), Arts. 29–31",
+   p:null, pt:null,
+   q:"¿Cuál es la naturaleza jurídica del INE y qué implica su carácter de organismo público autónomo?",
+   o:["El INE es un organismo descentralizado del Poder Ejecutivo Federal con personalidad jurídica propia.",
+      "El INE es un organismo público autónomo, con personalidad jurídica y patrimonio propios, que no está subordinado a ninguno de los tres poderes del Estado, lo que garantiza su independencia en la organización de las elecciones.",
+      "El INE es un órgano del Poder Judicial Federal con funciones administrativas electorales."],
+   c:1,
+   ex:"El INE (Art. 41 CPEUM y Arts. 29–31 LGIPE) es un organismo público autónomo constitucional, con personalidad jurídica y patrimonio propios. Su autonomía implica que no está subordinado al Ejecutivo, Legislativo ni Judicial, lo que le permite ejercer sus funciones con plena independencia institucional." }
+
+// ── 3.2  Órganos del INE  (+4) ──
+
+,{ sa:"3.2", sal:"Órganos del INE",
+   ref:"LGIPE (2024), Arts. 35 y 36",
+   p:null, pt:null,
+   q:"¿Cuántos consejeros electorales integran el Consejo General del INE y cuánto dura su encargo?",
+   o:["9 consejeros electorales con encargo de 6 años renovables.",
+      "11 consejeros electorales con encargo de 9 años escalonados sin reelección.",
+      "7 consejeros electorales con encargo de 7 años sin reelección."],
+   c:1,
+   ex:"El Art. 35 LGIPE establece que el Consejo General se integra por 11 Consejeras y Consejeros Electorales, incluyendo al Consejero Presidente. Su encargo dura 9 años de forma escalonada y no son reelegibles, garantizando continuidad institucional y renovación periódica." }
+
+,{ sa:"3.2", sal:"Órganos del INE",
+   ref:"LGIPE (2024), Arts. 55–65",
+   p:"Las Comisiones del Consejo General del INE son órganos colegiados especializados encargados de preparar los asuntos que se someten al pleno del Consejo.", pt:"Comisiones del Consejo General",
+   q:"¿Cuál es la diferencia entre las Comisiones Permanentes y las Comisiones Temporales del Consejo General del INE?",
+   o:["Las Comisiones Permanentes son las que tienen más presupuesto asignado; las Temporales son las que menos recursos tienen.",
+      "Las Comisiones Permanentes están previstas en la ley y funcionan de manera continua; las Temporales son creadas por el Consejo General para atender asuntos específicos y se disuelven al concluir su objeto.",
+      "No existe diferencia práctica; ambas tienen el mismo tipo de funciones."],
+   c:1,
+   ex:"Las Comisiones Permanentes (Arts. 55–65 LGIPE) están previstas en la ley con funciones continuas (Organización Electoral, Capacitación, Fiscalización, etc.). Las Comisiones Temporales son creadas discrecionalmente por el Consejo General para atender un asunto específico y se extinguen al concluir." }
+
+,{ sa:"3.2", sal:"Órganos del INE",
+   ref:"LGIPE (2024), Arts. 66–82",
+   p:null, pt:null,
+   q:"¿Cuáles son las funciones de la Dirección Ejecutiva del Registro Federal de Electores (DERFE)?",
+   o:["Organizar las campañas de comunicación política y gestionar los tiempos en radio y televisión.",
+      "Formar y mantener actualizado el catálogo general de electores, el padrón electoral y la lista nominal; expedir la credencial para votar; y llevar a cabo los estudios del territorio nacional para efectos de distritación.",
+      "Fiscalizar los ingresos y gastos de partidos políticos durante las campañas."],
+   c:1,
+   ex:"La DERFE (Art. 68 LGIPE) tiene a su cargo el catálogo general de electores, el padrón electoral y la lista nominal, la expedición de la credencial para votar y los trabajos de cartografía electoral y distritación. Estas funciones son el soporte del registro de los ciudadanos habilitados para votar." }
+
+,{ sa:"3.2", sal:"Órganos del INE",
+   ref:"LGIPE (2024), Arts. 66–82",
+   p:null, pt:null,
+   q:"¿Cuál es la función de la Unidad Técnica de Fiscalización (UTF) del INE y qué tipo de control ejerce?",
+   o:["La UTF elabora el presupuesto de egresos del INE y controla su ejercicio.",
+      "La UTF fiscaliza el origen y destino de los recursos de los partidos políticos y candidatos, verificando que el financiamiento y el gasto cumplan con la normativa y los límites legales establecidos.",
+      "La UTF supervisa únicamente el gasto de los candidatos independientes durante las campañas."],
+   c:1,
+   ex:"La UTF es el órgano técnico del INE encargado de fiscalizar los recursos de partidos políticos, candidatos y agrupaciones políticas. Revisa el origen (licitud) y destino (cumplimiento de límites y reglas) del financiamiento, como parte del sistema de control del dinero en la política." }
+
+// ── 3.3  Servicio Profesional Electoral Nacional  (+3) ──
+
+,{ sa:"3.3", sal:"Servicio Profesional Electoral Nacional",
+   ref:"ESPEN (2024), Arts. 30–45",
+   p:null, pt:null,
+   q:"¿Cuáles son los principios que rigen el Servicio Profesional Electoral Nacional conforme al Estatuto del SPEN?",
+   o:["Lealtad institucional, obediencia jerárquica y antigüedad.",
+      "Certeza, legalidad, objetividad, imparcialidad, profesionalismo y equidad de género.",
+      "Eficiencia, productividad, austeridad y rendición de cuentas económica."],
+   c:1,
+   ex:"El Estatuto del SPEN establece que el servicio se rige por los principios de certeza, legalidad, objetividad, imparcialidad, profesionalismo y equidad de género, en consonancia con los principios rectores del INE y la función electoral que el personal está llamado a desempeñar." }
+
+,{ sa:"3.3", sal:"Servicio Profesional Electoral Nacional",
+   ref:"ESPEN (2024), Arts. 46–60",
+   p:null, pt:null,
+   q:"¿Qué es la evaluación del desempeño en el SPEN y qué consecuencias tiene para la permanencia del personal?",
+   o:["Es un trámite administrativo sin consecuencias para la permanencia del personal.",
+      "Es el proceso periódico mediante el cual se mide el rendimiento y los resultados del personal de carrera; obtener calificaciones insuficientes de manera reiterada puede dar lugar a la separación del servicio conforme al Estatuto.",
+      "Solo evalúa el personal de nuevo ingreso durante su primer año de servicio."],
+   c:1,
+   ex:"La evaluación del desempeño en el SPEN (Arts. 46–60 ESPEN) es el mecanismo periódico que mide el cumplimiento de metas, competencias y valores del personal de carrera. El personal que obtenga resultados insuficientes de forma reiterada puede ser separado del servicio, garantizando estándares de calidad continua." }
+
+,{ sa:"3.3", sal:"Servicio Profesional Electoral Nacional",
+   ref:"ESPEN (2024), Arts. 61–75",
+   p:"El SPEN distingue tres ramas de carrera: ejecutiva, técnica y administrativa. Cada rama tiene perfiles, funciones y trayectorias de desarrollo distintos.", pt:"Ramas del SPEN",
+   q:"¿Cuál es la función principal del personal de la rama ejecutiva del SPEN?",
+   o:["Realizar labores de apoyo administrativo y archivo documental en los órganos centrales y desconcentrados.",
+      "Conducir, coordinar y tomar decisiones en los órganos del INE, siendo responsable de la planeación y ejecución de los procesos electorales en su ámbito de competencia.",
+      "Desarrollar sistemas informáticos y bases de datos para el procesamiento de la información electoral."],
+   c:1,
+   ex:"La rama ejecutiva del SPEN comprende al personal que dirige y coordina los procesos en los órganos desconcentrados y centrales: Vocales Ejecutivos, Directores de área, etc. Son los responsables de la conducción operativa y la toma de decisiones electorales en su ámbito. La rama técnica opera procesos especializados y la administrativa brinda soporte." }
+
 
 ]; // fin BANCO_MODULO_C
