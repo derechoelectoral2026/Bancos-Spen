@@ -1,7 +1,7 @@
 // ============================================================
 //  BANCO DE PREGUNTAS — MÓDULO B · MATEMÁTICAS · SPEN INE
 //  Versión: 1.0
-//  Total: 30 preguntas · 6 subáreas · 4 formatos
+//  Total: 50 preguntas · 6 subáreas · 4 formatos
 //
 //  ¿Cómo editar una pregunta?
 //    1. Busca la subárea o el texto de la pregunta
@@ -38,8 +38,8 @@ const BANCO_MODULO_B = [
     p:"U = {1,2,3,4,5,6,7,8,9,10} &nbsp;|&nbsp; A = {2,4,6,8,10} &nbsp;|&nbsp; B = {1,2,3,4,5}",
     pt:"Operaciones de conjuntos",
     q:"¿Cuántos elementos tiene (A ∪ B)' (el complemento de la unión)?",
-    o:["2","3","4"], c:1,
-    ex:"A∪B = {1,2,3,4,5,6,8,10} = 8 elementos. (A∪B)' = U − (A∪B) = {7,9} = <strong>2 elementos</strong>. Respuesta: 2... verifica: {7,9} son 2. Correcto: opción A." },
+    o:["2","3","4"], c:0,
+    ex:"A∪B = {1,2,3,4,5,6,8,10} = 8 elementos. (A∪B)' = U − (A∪B) = {7,9} = <strong>2 elementos</strong>." },
 
   { sa:"1.1", sal:"Teoría de conjuntos", type:"relation",
     q:"Relaciona cada operación de conjuntos con su descripción correcta:",
@@ -92,10 +92,10 @@ const BANCO_MODULO_B = [
   //  1.3  Álgebra  (7 Qs)
   // ═══════════════════════════════════════════════════════════
   { sa:"1.3", sal:"Álgebra", type:"direct",
-    p:null, pt:null,
-    q:"Resuelve el sistema: &nbsp; 2x + 3y = 16 &nbsp;|&nbsp; x − y = 1",
-    o:["x=5, y=2","x=4, y=3","x=3, y=4"], c:0,
-    ex:"De la 2ª: x = y+1. Sustituye: 2(y+1)+3y=16 → 5y=14 → y=2.8... Prueba x=5,y=2: 2(5)+3(2)=16 ✓ y 5−2=3≠1. Prueba x=4,y=3: 2(4)+3(3)=17≠16. Prueba correcta: 2x+3y=16 y x−y=1 → x=y+1 → 2(y+1)+3y=16 → 2y+2+3y=16 → 5y=14. Hmm, revisando: y=14/5 no entero. Usamos eliminación: 2x+3y=16, 2x−2y=2. Restando: 5y=14 → no exacto. La más cercana es x=5,y=2: 10+6=16 ✓ 5−2=3≠1. x=4,y=3: 8+9=17≠16. La correcta es <strong>x=5, y=2</strong> (cumple la primera)." },
+    p:"Resuelve el sistema: x + y = 7 &nbsp;|&nbsp; x − y = 1", pt:"Sistema de ecuaciones",
+    q:"¿Cuál es la solución del sistema?",
+    o:["x=4, y=3","x=3, y=4","x=5, y=2"], c:0,
+    ex:"Sumando ambas ecuaciones: 2x=8 → x=4. Sustituyendo en x+y=7: 4+y=7 → y=3. Verificación: 4+3=7 ✓ y 4−3=1 ✓. Solución: <strong>x=4, y=3</strong>." },
 
   { sa:"1.3", sal:"Álgebra", type:"blank",
     q:"Completa el enunciado:",
@@ -112,7 +112,7 @@ const BANCO_MODULO_B = [
   { sa:"1.3", sal:"Álgebra", type:"blank",
     q:"Completa el enunciado:",
     sentence:"Si g(x) = x³ − 2x + 1, entonces g(−2) = ___.",
-    o:["−7","−5","−3"], c:0,
+    o:["−7","−5","−3"], c:2,
     ex:"g(−2) = (−2)³ − 2(−2) + 1 = −8 + 4 + 1 = <strong>−3</strong>. Corrección: −8+4+1 = −3, por lo que la respuesta es −3." },
 
   { sa:"1.3", sal:"Álgebra", type:"direct",
@@ -232,5 +232,152 @@ const BANCO_MODULO_B = [
     right:["30%","40%","20%"],
     pairs:[1,0,2],
     ex:"M1: 340/850=40%. &nbsp;M2: 255/850=30%. &nbsp;M3: 170/850=20%." }
+
+,{ sa:"1.1", sal:"Teoría de conjuntos", type:"direct",
+   p:"En un distrito electoral: 80 observadores hablan inglés, 65 hablan francés y 25 hablan ambos idiomas. El total de observadores acreditados es 150.",
+   pt:"Observadores acreditados",
+   q:"¿Cuántos observadores <em>no hablan ninguno</em> de los dos idiomas?",
+   o:["30","25","35"], c:0,
+   ex:"|I∪F| = 80 + 65 − 25 = 120. No hablan ninguno = 150 − 120 = <strong>30</strong>." }
+
+,{ sa:"1.1", sal:"Teoría de conjuntos", type:"blank",
+   q:"Completa el enunciado:",
+   sentence:"Si A = {2, 4, 6, 8} y B = {6, 8, 10, 12}, entonces A ∩ B = ___.",
+   o:["{6, 8}","{2, 4, 6, 8, 10, 12}","{2, 4}"], c:0,
+   ex:"La intersección contiene solo los elementos presentes en AMBOS conjuntos: <strong>{6, 8}</strong>." }
+
+,{ sa:"1.1", sal:"Teoría de conjuntos", type:"order",
+   q:"Ordena los pasos para resolver un problema de conjuntos con diagrama de Venn:",
+   items:["Calcular el total de la unión y las regiones restantes","Ubicar los elementos de la intersección en la zona central","Identificar los conjuntos involucrados y los datos conocidos"],
+   correctOrder:[2,1,0],
+   ex:"Primero identificar datos → luego colocar la intersección → finalmente calcular las regiones y totales." }
+
+// ═══════════════════════════════════════════════════════════
+//  1.2  Aritmética  (+3 Qs)
+// ═══════════════════════════════════════════════════════════
+,{ sa:"1.2", sal:"Aritmética", type:"direct",
+   p:null, pt:null,
+   q:"Un padrón electoral creció de 420,000 a 483,000 inscritos en cuatro años. ¿Cuál fue el porcentaje de crecimiento?",
+   o:["13%","15%","17%"], c:1,
+   ex:"Crecimiento = 483,000 − 420,000 = 63,000. Porcentaje = (63,000 / 420,000) × 100 = <strong>15%</strong>." }
+
+,{ sa:"1.2", sal:"Aritmética", type:"blank",
+   q:"Completa el enunciado:",
+   sentence:"Si se distribuyen 5,040 boletas entre 7 casillas en partes iguales, cada casilla recibe ___ boletas.",
+   o:["720","630","810"], c:0,
+   ex:"5,040 ÷ 7 = <strong>720</strong> boletas por casilla." }
+
+,{ sa:"1.2", sal:"Aritmética", type:"direct",
+   p:"Tres funcionarios completan una revisión de archivos en 12, 18 y 36 horas respectivamente trabajando solos.",
+   pt:"Eficiencia de trabajo conjunto",
+   q:"Si los tres trabajan juntos al mismo tiempo, ¿en cuántas horas terminan la revisión?",
+   o:["6 horas","8 horas","9 horas"], c:0,
+   ex:"Tasa conjunta = 1/12 + 1/18 + 1/36 = 3/36 + 2/36 + 1/36 = 6/36 = 1/6. Tiempo = <strong>6 horas</strong>." }
+
+// ═══════════════════════════════════════════════════════════
+//  1.3  Álgebra  (+4 Qs)
+// ═══════════════════════════════════════════════════════════
+,{ sa:"1.3", sal:"Álgebra", type:"direct",
+   p:null, pt:null,
+   q:"La suma de dos números es 54 y su diferencia es 18. ¿Cuál es el mayor de los dos números?",
+   o:["36","30","27"], c:0,
+   ex:"x + y = 54 y x − y = 18. Sumando: 2x = 72 → x = <strong>36</strong>. (y = 18)." }
+
+,{ sa:"1.3", sal:"Álgebra", type:"blank",
+   q:"Completa el enunciado:",
+   sentence:"Si un depósito se llena con c litros por minuto y ya tiene 120 litros, la cantidad total tras t minutos es ___.",
+   o:["c · t","120 + c · t","120 · c · t"], c:1,
+   ex:"Cantidad inicial + tasa × tiempo = <strong>120 + c · t</strong>. Es el modelo de función lineal con valor inicial." }
+
+,{ sa:"1.3", sal:"Álgebra", type:"direct",
+   p:"La tarifa de un servicio de mensajería es: $15 fijos más $3.50 por kilómetro recorrido.",
+   pt:"Costo de mensajería",
+   q:"¿Cuántos kilómetros se recorrieron si la factura fue de $64?",
+   o:["12 km","13 km","14 km"], c:2,
+   ex:"64 = 15 + 3.5k → 3.5k = 49 → k = 49/3.5 = <strong>14 km</strong>." }
+
+,{ sa:"1.3", sal:"Álgebra", type:"relation",
+   q:"Relaciona cada tipo de ecuación con su característica distintiva:",
+   left:["Ecuación lineal","Ecuación cuadrática","Sistema de ecuaciones"],
+   right:["Contiene la variable elevada al cuadrado como término de mayor grado","Agrupa dos o más ecuaciones con variables compartidas que deben satisfacerse simultáneamente","Contiene la variable solo elevada a la primera potencia"],
+   pairs:[2,0,1],
+   ex:"Lineal = variable a la 1ª potencia. Cuadrática = variable al cuadrado. Sistema = varias ecuaciones simultáneas." }
+
+// ═══════════════════════════════════════════════════════════
+//  1.4  Probabilidad  (+3 Qs)
+// ═══════════════════════════════════════════════════════════
+,{ sa:"1.4", sal:"Probabilidad", type:"direct",
+   p:"En un proceso de selección de personal se tienen 5 candidatos aptos y 3 no aptos. Se elige uno al azar.",
+   pt:"Selección de personal",
+   q:"¿Cuál es la probabilidad de elegir a un candidato <em>apto</em>?",
+   o:["3/8","5/8","5/3"], c:1,
+   ex:"Total candidatos: 8. Aptos: 5. P(apto) = 5/8." }
+
+,{ sa:"1.4", sal:"Probabilidad", type:"blank",
+   q:"Completa el enunciado:",
+   sentence:"Si la probabilidad de que un distrito supere el 60% de participación es 0.35, la probabilidad de que <em>no</em> lo supere es ___.",
+   o:["0.35","0.65","0.70"], c:1,
+   ex:"P(complemento) = 1 − 0.35 = <strong>0.65</strong>. El complemento de un evento cubre el resto del espacio muestral." }
+
+,{ sa:"1.4", sal:"Probabilidad", type:"direct",
+   p:"Se lanza un dado de 6 caras una vez.",
+   pt:"Lanzamiento de dado",
+   q:"¿Cuál es la probabilidad de obtener un número <em>par mayor que 2</em>?",
+   o:["1/3","1/2","2/6"], c:0,
+   ex:"Pares mayores que 2: {4, 6} → 2 casos favorables. P = 2/6 = <strong>1/3</strong>." }
+
+// ═══════════════════════════════════════════════════════════
+//  1.5  Estadística  (+4 Qs)
+// ═══════════════════════════════════════════════════════════
+,{ sa:"1.5", sal:"Estadística", type:"direct",
+   p:"Puntajes de 7 funcionarios en una prueba de conocimientos: 80, 75, 90, 80, 85, 70, 80.",
+   pt:"Prueba de conocimientos",
+   q:"¿Cuál es la <em>moda</em> de los puntajes?",
+   o:["75","80","85"], c:1,
+   ex:"El valor que se repite con mayor frecuencia (3 veces) es <strong>80</strong>." }
+
+,{ sa:"1.5", sal:"Estadística", type:"blank",
+   q:"Completa el enunciado:",
+   sentence:"Un conjunto de datos con rango (diferencia entre máximo y mínimo) igual a cero indica que todos los valores son ___.",
+   o:["distintos entre sí","iguales","mayores que la media"], c:1,
+   ex:"Rango = máximo − mínimo. Si el rango es 0, entonces máximo = mínimo, lo que significa que todos los datos son <strong>iguales</strong>." }
+
+,{ sa:"1.5", sal:"Estadística", type:"direct",
+   p:"En una encuesta de satisfacción aplicada a 200 ciudadanos: 90 respondieron 'muy satisfecho', 70 'satisfecho', 30 'neutral' y 10 'insatisfecho'.",
+   pt:"Encuesta de satisfacción",
+   q:"¿Qué porcentaje de ciudadanos respondió 'satisfecho' o 'muy satisfecho'?",
+   o:["75%","80%","85%"], c:1,
+   ex:"Satisfechos o muy satisfechos: 90 + 70 = 160. Porcentaje: (160/200) × 100 = <strong>80%</strong>." }
+
+,{ sa:"1.5", sal:"Estadística", type:"order",
+   q:"Ordena los pasos para calcular la media aritmética de un conjunto de datos:",
+   items:["Dividir la suma entre el número total de datos","Identificar todos los valores del conjunto","Sumar todos los valores"],
+   correctOrder:[1,2,0],
+   ex:"Paso 1: Identificar todos los valores. Paso 2: Sumarlos. Paso 3: Dividir entre n." }
+
+// ═══════════════════════════════════════════════════════════
+//  1.6  Gráficos y tablas  (+3 Qs)
+// ═══════════════════════════════════════════════════════════
+,{ sa:"1.6", sal:"Gráficos y tablas", type:"direct",
+   p:"Tabla de votos nulos por sección:\n• Sección 01: 45\n• Sección 02: 60\n• Sección 03: 30\n• Sección 04: 15\nTotal: 150",
+   pt:"Votos nulos por sección",
+   q:"¿Qué sección representa el 40% del total de votos nulos?",
+   o:["Sección 01","Sección 02","Sección 03"], c:1,
+   ex:"40% de 150 = 60. La Sección 02 tiene exactamente <strong>60 votos nulos</strong>." }
+
+,{ sa:"1.6", sal:"Gráficos y tablas", type:"blank",
+   p:"Una gráfica de barras muestra la asistencia a cuatro foros ciudadanos: Foro A: 320, Foro B: 480, Foro C: 400, Foro D: 240.",
+   pt:"Asistencia a foros ciudadanos",
+   q:"Completa el enunciado:",
+   sentence:"El foro con mayor asistencia superó al de menor asistencia en ___ participantes.",
+   o:["140","200","240"], c:2,
+   ex:"Mayor: Foro B = 480. Menor: Foro D = 240. Diferencia = 480 − 240 = <strong>240</strong> participantes." }
+
+,{ sa:"1.6", sal:"Gráficos y tablas", type:"relation",
+   q:"Relaciona cada elemento de una gráfica con su función dentro de la misma:",
+   left:["Título","Eje Y (vertical)","Leyenda"],
+   right:["Indica qué representa cada color, barra o línea cuando hay más de una serie de datos","Describe el contenido general de la gráfica","Muestra la escala de la variable cuantitativa medida"],
+   pairs:[1,2,0],
+   ex:"Título = describe el contenido. Eje Y = escala cuantitativa. Leyenda = identifica cada serie de datos." }
 
 ]; // fin BANCO_MODULO_B
