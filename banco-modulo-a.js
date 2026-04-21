@@ -1,7 +1,7 @@
 // ============================================================
 //  BANCO DE PREGUNTAS — MÓDULO A · SPEN INE
 //  Versión: 1.0
-//  Total: 60 preguntas · 5 subáreas · 4 formatos
+//  Total: 85 preguntas · 5 subáreas · 4 formatos
 //
 //  ¿Cómo editar una pregunta?
 //    1. Busca el id de la pregunta (id:1, id:2, etc.)
@@ -549,109 +549,236 @@ const BANCO_MODULO_A = [
   opts:["Porque documentos más extensos generan mayor participación ciudadana.","Porque documentos claros permiten que todos los ciudadanos comprendan las reglas y participen en condiciones iguales.","Porque el lenguaje técnico eleva la credibilidad institucional del proceso."],
   correct:1, expl:"El texto vincula directamente la calidad documental con la equidad: si los documentos son claros, todos pueden participar; si no, solo quienes entienden el lenguaje técnico."
 },
-
-// ═══════════════════════════════════════════════════════════
-//  PREGUNTAS ADICIONALES v1.1
-//  10 preguntas · 1.1 (3) · 1.2 (3) · 1.3 (4)
-//  El simulacro toma 60 al azar de las 70 disponibles
-// ═══════════════════════════════════════════════════════════
-
-// ── 3 nuevas en 1.1 ──
 {
-  id:61, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"C",
-  pTitle:"Estructura de un Ensayo Académico",
-  passage:"El ensayo académico sigue una estructura argumentativa que permite al autor presentar, desarrollar y sostener una postura ante la comunidad científica.",
-  q:"Ordena las partes de un ensayo académico en su secuencia correcta.",
-  items:["Desarrollo de argumentos con evidencias y referencias","Introducción con planteamiento del problema y tesis","Conclusión que retoma la tesis y sintetiza los hallazgos","Marco teórico que contextualiza el problema"],
-  correctOrder:[1,3,0,2],
-  expl:"El orden es: Introducción/tesis → Marco teórico → Desarrollo con evidencias → Conclusión."
+  id:61, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"A",
+  pTitle:"La Hipótesis de Investigación",
+  passage:"Una hipótesis de investigación no es una afirmación definitiva sino una proposición provisional que el investigador somete a prueba. Para ser científicamente válida debe cumplir tres condiciones: ser falsable (posible de refutar con evidencia empírica), ser específica (delimitar con claridad las variables y la relación esperada) y ser contrastable (disponer de indicadores medibles o registrables).",
+  q:"¿Cuál de las siguientes formulaciones NO cumple los requisitos de una hipótesis científica válida según el fragmento?",
+  opts:["El incremento del tiempo de capacitación semanal se asociará con una reducción de errores en el registro de datos.","Las personas con más experiencia son, en general, mejores en su trabajo.","A mayor número de revisores en el proceso editorial, menor será la tasa de errores publicados."],
+  correct:1, expl:"La opción B es vaga: no especifica variables medibles ni la relación esperada con precisión; no es falsable ni contrastable tal como está formulada."
 },
 {
-  id:62, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"A",
-  pTitle:"La Inferencia en Textos Académicos",
-  passage:"Una inferencia es una conclusión que el lector obtiene a partir de información implícita en el texto. A diferencia de la información explícita, que se encuentra directamente enunciada, la inferencia requiere que el lector active su conocimiento previo y establezca relaciones entre ideas no formuladas directamente.",
-  q:"¿Qué distingue a una inferencia de una paráfrasis según el fragmento?",
-  opts:["La paráfrasis extrae información implícita; la inferencia reproduce fielmente el texto original.","La inferencia obtiene conclusiones de información implícita; la paráfrasis reformula información explícita.","Ambas operaciones son equivalentes y se realizan de la misma manera."],
-  correct:1,
-  expl:"El texto define la inferencia como extracción de información implícita que requiere conocimiento previo, lo que la diferencia de reformular lo ya dicho (paráfrasis)."
+  id:62, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"B",
+  pTitle:"Muestreo en Investigación Cuantitativa",
+  passage:"El muestreo probabilístico garantiza que cada elemento de la población tenga una probabilidad conocida y distinta de cero de ser seleccionado. Esto permite extrapolar los resultados al conjunto poblacional con un nivel de confianza calculable. En contraste, el muestreo no probabilístico ofrece mayor flexibilidad pero limita la generalización estadística.",
+  q:"Según el texto, la ventaja distintiva del muestreo probabilístico sobre el no probabilístico es que permite ________ los resultados a la población con un nivel de confianza calculable.",
+  opts:["simplificar y acelerar","generalizar o extrapolar","fragmentar y segmentar"],
+  correct:1, expl:"El texto señala que el muestreo probabilístico 'permite extrapolar los resultados al conjunto poblacional', lo que equivale a generalizar con base estadística."
 },
 {
-  id:63, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"D",
-  pTitle:"Tipos de Fuentes de Información",
-  passage:"Las fuentes de información académica se clasifican según su cercanía con el origen del conocimiento y el nivel de procesamiento al que ha sido sometida la información.",
-  q:"Relaciona cada tipo de fuente con su característica.",
-  leftItems:["Fuente primaria","Fuente secundaria","Fuente terciaria"],
-  rightItems:["Recopila y organiza fuentes primarias y secundarias (índices, bases de datos)","Presenta datos o resultados originales sin intermediarios","Analiza, interpreta o comenta fuentes primarias"],
+  id:63, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"C",
+  pTitle:"Fases del Análisis de Datos Cualitativos",
+  passage:"El análisis de datos cualitativos no sigue una secuencia rígida, pero en la práctica reconoce etapas que van de la inmersión en los datos brutos hasta la elaboración de conclusiones interpretativas.",
+  q:"Ordena las fases del análisis cualitativo de datos en su secuencia metodológica habitual.",
+  items:["Identificación de categorías y códigos emergentes","Redacción de hallazgos e interpretaciones finales","Transcripción y lectura repetida del material empírico","Saturación teórica y cierre del proceso de codificación"],
+  correctOrder:[2,0,3,1],
+  expl:"La secuencia es: Transcripción/lectura → Identificación de códigos → Saturación teórica → Redacción de hallazgos."
+},
+{
+  id:64, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"D",
+  pTitle:"Escalas de Medición en Ciencias Sociales",
+  passage:"Las escalas de medición determinan qué operaciones matemáticas son legítimas sobre los datos recogidos. Confundir el nivel de medición de una variable conduce a análisis estadísticos inapropiados y conclusiones inválidas.",
+  q:"Relaciona cada escala con la propiedad que la distingue de las inferiores.",
+  leftItems:["Nominal","Ordinal","De razón"],
+  rightItems:["Cuenta con un cero absoluto que indica ausencia total del atributo","Solo clasifica en categorías sin establecer orden entre ellas","Establece orden pero los intervalos entre valores no son iguales"],
   correctPairs:[[0,1],[1,2],[2,0]],
-  expl:"Primaria = datos originales; Secundaria = análisis de primarias; Terciaria = compilación y organización de las anteriores."
+  expl:"Nominal = solo clasifica; Ordinal = añade orden sin intervalos iguales; Razón = añade cero absoluto real."
+},
+{
+  id:65, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"A",
+  pTitle:"Ética en la Investigación con Personas",
+  passage:"Los principios de la ética en investigación con seres humanos derivan en gran parte del Informe Belmont (1979): respeto a las personas (autonomía e información para el consentimiento informado), beneficencia (maximizar beneficios y minimizar riesgos) y justicia (distribución equitativa de cargas y beneficios entre los participantes). Ningún principio tiene precedencia absoluta; deben ponderarse en cada caso.",
+  q:"¿Qué implica el principio de justicia en investigación según el Informe Belmont descrito en el texto?",
+  opts:["Que los investigadores siempre deben obtener el consentimiento escrito de los participantes.","Que las cargas y los beneficios de la investigación se distribuyan equitativamente entre los participantes.","Que los beneficios del estudio deben superar siempre sus riesgos potenciales."],
+  correct:1, expl:"El texto define justicia como 'distribución equitativa de cargas y beneficios'; el consentimiento corresponde al principio de autonomía y la minimización de riesgos al de beneficencia."
 },
 
-// ── 3 nuevas en 1.2 ──
+// ═══════════════════════════════════════════════════════════
+//  1.2  Comprensión lectora – Ámbito literario  (+5 Qs)
+// ═══════════════════════════════════════════════════════════
 {
-  id:64, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"C",
-  pTitle:"Géneros Literarios y sus Subgéneros",
-  passage:"La teoría literaria clasifica los textos en géneros según sus rasgos formales, temáticos y de enunciación. Cada género agrupa subgéneros con características más específicas.",
-  q:"Ordena los géneros literarios del más antiguo al más reciente en su consolidación histórica occidental.",
-  items:["La novela moderna (siglos XVII–XVIII)","La lírica (poesía) griega arcaica","El teatro clásico grecolatino","El cuento literario moderno (siglo XIX)"],
-  correctOrder:[1,2,0,3],
-  expl:"Orden histórico: Lírica griega arcaica → Teatro grecolatino → Novela moderna (s. XVII–XVIII) → Cuento literario moderno (s. XIX)."
-},
-{
-  id:65, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"B",
+  id:66, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"B",
   pTitle:"El Monólogo Interior",
-  passage:"El monólogo interior es una técnica narrativa que reproduce el flujo de pensamientos de un personaje de forma directa, sin la mediación del narrador. A diferencia del soliloquio teatral, el monólogo interior busca simular el carácter asociativo, fragmentado y no lineal de la mente humana.",
-  q:"El monólogo interior se distingue del soliloquio porque busca reproducir el pensamiento de manera ________, sin orden lógico aparente.",
-  opts:["secuencial y ordenada","asociativa y fragmentada","objetiva y distante"],
-  correct:1,
-  expl:"El texto señala que el monólogo interior simula el carácter 'asociativo, fragmentado y no lineal' de la mente, rasgo que lo distingue del soliloquio más ordenado."
+  passage:"El monólogo interior es una técnica narrativa que reproduce el flujo del pensamiento de un personaje sin la mediación del narrador omnisciente. En su forma más radical —el stream of consciousness— la sintaxis se fragmenta para imitar la discontinuidad y simultaneidad de la mente humana. James Joyce y Virginia Woolf son sus exponentes canónicos.",
+  q:"Según el texto, la característica que distingue al stream of consciousness del monólogo interior convencional es la ________ de la sintaxis para imitar la discontinuidad mental.",
+  opts:["regularidad y fluidez","fragmentación deliberada","claridad expositiva"],
+  correct:1, expl:"El texto menciona que en el stream of consciousness 'la sintaxis se fragmenta para imitar la discontinuidad y simultaneidad de la mente'; eso lo distingue de un monólogo interior más ordenado."
 },
 {
-  id:66, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"A",
-  pTitle:"El Realismo Mágico",
-  passage:"El realismo mágico integra elementos fantásticos o sobrenaturales en un entorno realista sin que los personajes los cuestionen. A diferencia de la literatura fantástica, donde lo sobrenatural genera extrañeza, en el realismo mágico lo maravilloso forma parte natural de la realidad cotidiana de los personajes.",
-  q:"¿Cuál es la diferencia central entre el realismo mágico y la literatura fantástica según el texto?",
-  opts:["En el realismo mágico los personajes cuestionan lo sobrenatural; en lo fantástico lo aceptan con naturalidad.","En el realismo mágico lo sobrenatural es parte natural de la realidad; en lo fantástico genera extrañeza o asombro.","Ambas corrientes tratan lo sobrenatural de la misma manera, solo difieren en el contexto geográfico."],
-  correct:1,
-  expl:"El texto establece la distinción clave: en lo fantástico lo sobrenatural genera extrañeza; en el realismo mágico se integra naturalmente a la cotidianidad sin cuestionar."
+  id:67, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"A",
+  pTitle:"El Bildungsroman",
+  passage:"El Bildungsroman o novela de formación narra el proceso de desarrollo psicológico y moral de un protagonista desde la adolescencia hasta la madurez. El conflicto central suele ser la tensión entre las aspiraciones individuales del personaje y las restricciones del orden social. La resolución no siempre implica aceptación sino, a veces, la constatación del fracaso del ideal.",
+  q:"¿Cuál es el conflicto que estructura narrativamente al Bildungsroman según el fragmento?",
+  opts:["La lucha del protagonista contra un antagonista externo claramente definido.","La tensión entre las aspiraciones personales del protagonista y las restricciones sociales.","El dilema moral entre el bien y el mal en contextos históricos específicos."],
+  correct:1, expl:"El texto define el conflicto central como 'la tensión entre las aspiraciones individuales y las restricciones del orden social', no un antagonista ni un dilema bien/mal."
+},
+{
+  id:68, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"D",
+  pTitle:"Recursos del Lenguaje Poético",
+  passage:"El lenguaje poético recurre a mecanismos fónicos y semánticos que intensifican la experiencia estética del lector y distinguen al texto literario del discurso cotidiano.",
+  q:"Relaciona cada recurso con su definición precisa.",
+  leftItems:["Aliteración","Sinestesia","Hipérbaton"],
+  rightItems:["Alteración del orden sintáctico habitual de la oración","Repetición de sonidos consonánticos en posiciones próximas","Transferencia de una sensación de un sentido a otro campo sensorial"],
+  correctPairs:[[0,1],[1,2],[2,0]],
+  expl:"Aliteración = repetición de sonidos; Sinestesia = mezcla de sentidos; Hipérbaton = orden sintáctico alterado."
+},
+{
+  id:69, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"C",
+  pTitle:"Estructura de la Tragedia Clásica",
+  passage:"La tragedia griega clásica sigue una estructura formal que Aristóteles describió en la Poética y que ha influido en el teatro occidental hasta la actualidad.",
+  q:"Ordena las partes de la tragedia griega clásica en su secuencia dramática.",
+  items:["Éxodo o desenlace y salida del coro","Párodos o canto de entrada del coro","Episodios o actos con intervención de actores","Prólogo o presentación del conflicto"],
+  correctOrder:[3,1,2,0],
+  expl:"La secuencia es: Prólogo → Párodos (entrada del coro) → Episodios (actos) → Éxodo (salida/desenlace)."
+},
+{
+  id:70, sub:"1.2", label:"Comprensión lectora – Ámbito literario", fmt:"A",
+  pTitle:"La Metaficción",
+  passage:"La metaficción es una estrategia narrativa en la que el texto llama la atención sobre su propia condición de artificio literario. Puede manifestarse cuando personajes leen o escriben la novela en que aparecen, cuando el narrador interrumpe la historia para dirigirse al lector, o cuando la trama reflexiona sobre las convenciones del género en que se inscribe. Su efecto es desestabilizar la ilusión de realismo.",
+  q:"¿Cuál es el propósito central de la metaficción según el fragmento?",
+  opts:["Fortalecer la ilusión de que los hechos narrados son reales.","Desestabilizar la ilusión realista haciendo visible el carácter construido del texto.","Introducir personajes históricos dentro de tramas de ficción."],
+  correct:1, expl:"El texto afirma que el efecto de la metaficción es 'desestabilizar la ilusión de realismo', es decir, romper el pacto de credibilidad del relato realista."
 },
 
-// ── 4 nuevas en 1.3 ──
+// ═══════════════════════════════════════════════════════════
+//  1.3  Comprensión lectora – Ámbito de participación social  (+5 Qs)
+// ═══════════════════════════════════════════════════════════
 {
-  id:67, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"D",
-  pTitle:"Tipos de Democracia",
-  passage:"Los sistemas democráticos modernos combinan mecanismos de representación con instrumentos de participación directa ciudadana, generando distintas modalidades de ejercicio del poder.",
-  q:"Relaciona cada tipo de democracia con su característica principal.",
-  leftItems:["Democracia representativa","Democracia directa","Democracia participativa"],
-  rightItems:["Combina representación con mecanismos de intervención ciudadana en decisiones concretas","Los ciudadanos delegan el poder en representantes electos","Los ciudadanos toman decisiones colectivas sin intermediarios"],
+  id:71, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"A",
+  pTitle:"Mecanismos de Democracia Directa",
+  passage:"Los mecanismos de democracia directa —referéndum, plebiscito, iniciativa popular e iniciativa de revocación de mandato— amplían la participación ciudadana más allá del voto periódico. Sin embargo, su eficacia depende de que los ciudadanos cuenten con información veraz, suficiente y comprensible para tomar decisiones informadas. La desinformación masiva puede convertir un mecanismo democrático en instrumento de manipulación.",
+  q:"¿Cuál es la condición indispensable para que los mecanismos de democracia directa funcionen como instrumentos democráticos según el fragmento?",
+  opts:["Que el número de votantes sea superior al cincuenta por ciento del padrón.","Que la ciudadanía tenga acceso a información veraz, suficiente y comprensible.","Que los medios de comunicación públicos transmitan los debates en horario estelar."],
+  correct:1, expl:"El texto condiciona la eficacia de estos mecanismos a que 'los ciudadanos cuenten con información veraz, suficiente y comprensible', no a umbrales de participación ni a la cobertura mediática."
+},
+{
+  id:72, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"B",
+  pTitle:"Capital Social y Cohesión Comunitaria",
+  passage:"El capital social —concepto desarrollado por Robert Putnam— se refiere a las redes de confianza, normas de reciprocidad y vínculos asociativos que facilitan la acción colectiva. Las comunidades con alto capital social tienden a resolver problemas locales con mayor eficiencia porque los costos de coordinación son más bajos. Su erosión, en cambio, dificulta la cooperación incluso cuando todos los involucrados se beneficiarían de ella.",
+  q:"Según el texto, las comunidades con alto capital social resuelven problemas colectivos más eficientemente porque sus ________ de coordinación son menores.",
+  opts:["tiempos y calendarios","costos o fricciones","recursos económicos"],
+  correct:1, expl:"El texto explica que el capital social facilita la acción colectiva porque 'los costos de coordinación son más bajos', no porque haya más recursos ni mejores calendarios."
+},
+{
+  id:73, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"D",
+  pTitle:"Instrumentos de Política Pública",
+  passage:"Los gobiernos cuentan con distintos tipos de instrumentos para incidir en el comportamiento de individuos y organizaciones en la búsqueda del bien público.",
+  q:"Relaciona cada instrumento con su mecanismo de acción.",
+  leftItems:["Instrumento regulatorio","Instrumento económico","Instrumento informativo"],
+  rightItems:["Modifica incentivos financieros (subsidios, impuestos) para orientar conductas","Establece obligaciones o prohibiciones de cumplimiento coercitivo","Busca cambiar conductas proporcionando datos, advertencias o campañas de concientización"],
+  correctPairs:[[0,1],[1,0],[2,2]],
+  expl:"Regulatorio = norma obligatoria; Económico = incentivos financieros; Informativo = datos y campañas."
+},
+{
+  id:74, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"C",
+  pTitle:"Ciclo de las Políticas Públicas",
+  passage:"El análisis de políticas públicas descompone la intervención gubernamental en fases que se retroalimentan de manera continua, conformando lo que se conoce como el ciclo de las políticas.",
+  q:"Ordena las fases del ciclo de políticas públicas en su secuencia lógica.",
+  items:["Evaluación de resultados e impactos","Identificación y definición del problema público","Implementación de la política seleccionada","Diseño y selección de alternativas de solución"],
+  correctOrder:[1,3,2,0],
+  expl:"El ciclo es: Definición del problema → Diseño/selección de alternativas → Implementación → Evaluación."
+},
+{
+  id:75, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"A",
+  pTitle:"El Derecho de Acceso a la Información",
+  passage:"El derecho de acceso a la información pública constituye un derecho fundamental que habilita a cualquier persona para solicitar, recibir y difundir información en poder del Estado. Su ejercicio no requiere acreditar interés jurídico ni motivar la solicitud. Las restricciones solo son legítimas cuando la información pueda comprometer la seguridad nacional, la privacidad de terceros o el proceso de deliberación interna de la autoridad.",
+  q:"¿Cuál de los siguientes principios del derecho de acceso a la información se desprende directamente del fragmento?",
+  opts:["El solicitante debe demostrar que la información le afecta personalmente para poder pedirla.","Cualquier persona puede solicitar información pública sin necesidad de justificar su petición.","Las instituciones pueden negar información siempre que no estén obligadas a publicarla proactivamente."],
+  correct:1, expl:"El texto dice explícitamente que el ejercicio de este derecho 'no requiere acreditar interés jurídico ni motivar la solicitud', lo que equivale a que no hay que justificar la petición."
+},
+
+// ═══════════════════════════════════════════════════════════
+//  2.1  Redacción indirecta – Ámbito de estudio  (+5 Qs)
+// ═══════════════════════════════════════════════════════════
+{
+  id:76, sub:"2.1", label:"Redacción indirecta – Ámbito de estudio", fmt:"B",
+  pTitle:"La Nota al Pie y la Cita Bibliográfica",
+  passage:"En los textos académicos la nota al pie cumple dos funciones distintas: la nota de referencia remite al lector a la fuente de una afirmación específica, mientras que la nota de contenido desarrolla una idea secundaria que enriquecería el argumento pero interrumpiría el flujo del texto principal. Confundirlas produce documentos con notas excesivamente largas o referencias enterradas en el cuerpo principal.",
+  q:"Según el texto, una nota que desarrolla información complementaria pero que interrumpiría el argumento central del párrafo es una nota de ________, no de referencia.",
+  opts:["pie de página obligatoria","contenido o discursiva","bibliografía final"],
+  correct:1, expl:"El texto distingue la nota de referencia (remite a fuente) de la nota de contenido (desarrolla idea secundaria sin romper el hilo); la que 'enriquecería el argumento pero interrumpiría el flujo' es la de contenido."
+},
+{
+  id:77, sub:"2.1", label:"Redacción indirecta – Ámbito de estudio", fmt:"A",
+  pTitle:"La Coherencia Textual",
+  passage:"La coherencia es la propiedad semántica del texto que garantiza su unidad de sentido: todos los enunciados deben contribuir al desarrollo del tema central y ninguno debe contradecir la información establecida previamente. Se distingue de la cohesión, que opera a nivel superficial mediante marcadores y conectores, mientras que la coherencia opera en el nivel profundo del significado global.",
+  q:"¿En qué difiere la coherencia de la cohesión según el fragmento?",
+  opts:["La coherencia usa conectores gramaticales; la cohesión opera en el nivel semántico profundo.","La coherencia opera en el nivel profundo del significado global; la cohesión usa mecanismos superficiales de enlace.","Coherencia y cohesión son sinónimos que designan la misma propiedad textual."],
+  correct:1, expl:"El texto invierte el orden común de confusión: coherencia = nivel semántico profundo; cohesión = mecanismos superficiales (conectores). La opción A los invierte incorrectamente."
+},
+{
+  id:78, sub:"2.1", label:"Redacción indirecta – Ámbito de estudio", fmt:"C",
+  pTitle:"Estructura del Artículo de Divulgación Científica",
+  passage:"El artículo de divulgación traduce el conocimiento especializado para un público no experto, pero debe mantener la precisión factual y la honestidad sobre el estado del conocimiento.",
+  q:"Ordena los elementos de un artículo de divulgación científica en su secuencia de redacción habitual.",
+  items:["Conclusiones y proyecciones para el lector no especializado","Título llamativo y lead de enganche","Contexto y antecedentes del tema","Explicación del hallazgo o avance principal"],
+  correctOrder:[1,2,3,0],
+  expl:"La secuencia es: Título/lead → Contexto/antecedentes → Explicación del hallazgo → Conclusiones/proyecciones."
+},
+{
+  id:79, sub:"2.1", label:"Redacción indirecta – Ámbito de estudio", fmt:"D",
+  pTitle:"Tipos de Párrafo según su Función",
+  passage:"La eficacia de un texto académico depende en gran medida de reconocer la función de cada párrafo y construirlo de acuerdo con esa función.",
+  q:"Relaciona cada tipo de párrafo con su función dentro del texto.",
+  leftItems:["Párrafo de introducción","Párrafo de transición","Párrafo de conclusión"],
+  rightItems:["Sintetiza los puntos clave y proyecta el significado de lo expuesto","Enuncia el tema, establece el contexto y anticipa la tesis","Conecta dos secciones del texto señalando el puente temático entre ellas"],
   correctPairs:[[0,1],[1,2],[2,0]],
-  expl:"Representativa = delegación en electos; Directa = decisión ciudadana sin intermediarios; Participativa = híbrido que combina ambas formas."
+  expl:"Introducción = enuncia tema y tesis; Transición = conecta secciones; Conclusión = sintetiza y proyecta."
 },
 {
-  id:68, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"C",
-  pTitle:"El Proceso de Formación de Políticas Públicas",
-  passage:"Las políticas públicas siguen un ciclo que va desde la identificación del problema hasta la evaluación de los resultados, pasando por etapas de diseño, implementación y seguimiento.",
-  q:"Ordena las etapas del ciclo de políticas públicas en su secuencia correcta.",
-  items:["Implementación y ejecución de la política","Evaluación de resultados e impacto","Identificación y definición del problema público","Diseño y formulación de alternativas de solución"],
-  correctOrder:[2,3,0,1],
-  expl:"El ciclo es: Identificación del problema → Diseño/formulación → Implementación → Evaluación de resultados."
+  id:80, sub:"2.1", label:"Redacción indirecta – Ámbito de estudio", fmt:"A",
+  pTitle:"El Resumen Ejecutivo",
+  passage:"El resumen ejecutivo es un documento autónomo que concentra los elementos esenciales de un informe extenso: problema o propósito, metodología aplicada, hallazgos principales y recomendaciones concretas. A diferencia del resumen o abstract académico, está orientado a tomadores de decisiones que pueden no leer el informe completo, por lo que el énfasis debe estar en las implicaciones prácticas y las acciones recomendadas.",
+  q:"¿En qué se diferencia el resumen ejecutivo del abstract académico según el texto?",
+  opts:["El resumen ejecutivo es más largo y detallado que el abstract.","El resumen ejecutivo enfatiza implicaciones prácticas para tomadores de decisiones; el abstract sintetiza el contenido para lectores académicos.","El resumen ejecutivo no incluye metodología, a diferencia del abstract."],
+  correct:1, expl:"El texto distingue al resumen ejecutivo por su orientación a 'tomadores de decisiones' y énfasis en 'implicaciones prácticas y acciones'; no dice que sea más largo ni que excluya la metodología."
+},
+
+// ═══════════════════════════════════════════════════════════
+//  2.2  Redacción indirecta – Ámbito de participación social  (+5 Qs)
+// ═══════════════════════════════════════════════════════════
+{
+  id:81, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"C",
+  pTitle:"Fases de la Consulta Pública",
+  passage:"La consulta pública es un mecanismo institucional para incorporar la perspectiva ciudadana en la elaboración de normas o políticas antes de su adopción definitiva.",
+  q:"Ordena las etapas de una consulta pública institucional en su secuencia correcta.",
+  items:["Sistematización y análisis de las aportaciones recibidas","Convocatoria y difusión entre los grupos interesados","Publicación del informe de resultados y decisiones adoptadas","Periodo abierto para la recepción de comentarios y propuestas"],
+  correctOrder:[1,3,0,2],
+  expl:"La secuencia es: Convocatoria y difusión → Recepción de comentarios → Sistematización/análisis → Publicación del informe de resultados."
 },
 {
-  id:69, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"A",
-  pTitle:"Los Medios Digitales y la Participación Ciudadana",
-  passage:"Las redes sociales y plataformas digitales han transformado las formas de participación ciudadana al reducir las barreras de acceso a la información y facilitar la organización colectiva. Sin embargo, también han generado nuevos riesgos como la polarización, las burbujas de filtro y la proliferación de desinformación.",
-  q:"¿Cuál es la postura equilibrada que presenta el texto sobre los medios digitales y la participación ciudadana?",
-  opts:["Los medios digitales solo generan efectos negativos como desinformación y polarización.","Los medios digitales facilitan la participación pero también introducen riesgos como polarización y desinformación.","Los medios digitales han resuelto todos los problemas de participación ciudadana tradicional."],
-  correct:1,
-  expl:"El texto presenta una visión equilibrada: reconoce los beneficios (acceso, organización) y los riesgos (polarización, burbujas, desinformación) de los medios digitales en la participación."
+  id:82, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"A",
+  pTitle:"La Transparencia Proactiva",
+  passage:"La transparencia proactiva obliga a las instituciones a publicar información de interés público sin necesidad de que un ciudadano la solicite previamente. Su fundamento es que la información generada con recursos públicos pertenece a la sociedad y su divulgación no debería depender de la iniciativa individual. Este enfoque contrasta con el modelo reactivo, en el que la institución solo revela información cuando se lo exigen.",
+  q:"¿Cuál es el argumento central que justifica la transparencia proactiva según el texto?",
+  opts:["Que publicar información reduce la carga administrativa de atender solicitudes individuales.","Que la información generada con recursos públicos pertenece a la sociedad y su acceso no debe depender de que alguien la pida.","Que los ciudadanos tienen mayor interés en la información cuando ellos mismos la solicitan."],
+  correct:1, expl:"El texto fundamenta la transparencia proactiva en que 'la información generada con recursos públicos pertenece a la sociedad'; la reducción de carga y el interés ciudadano no aparecen como argumentos."
 },
 {
-  id:70, sub:"1.3", label:"Comprensión lectora – Ámbito de participación social", fmt:"B",
-  pTitle:"El Capital Social",
-  passage:"El capital social se refiere a las redes de relaciones, normas de reciprocidad y confianza entre individuos que facilitan la acción colectiva. A mayor capital social en una comunidad, mayor es su capacidad para resolver problemas comunes sin necesidad de intervención externa.",
-  q:"Según el texto, el capital social favorece la resolución de problemas comunes porque fortalece las redes de ________ y confianza entre los miembros de una comunidad.",
-  opts:["competencia y rivalidad","relaciones y reciprocidad","dependencia e intervención"],
-  correct:1,
-  expl:"El texto define el capital social como 'redes de relaciones, normas de reciprocidad y confianza'; estos son los elementos que facilitan la acción colectiva sin intervención externa."
+  id:83, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"B",
+  pTitle:"Redacción de Convocatorias Institucionales",
+  passage:"Una convocatoria institucional eficaz debe responder con precisión a las preguntas: ¿quién puede participar? (requisitos de elegibilidad), ¿para qué? (objeto y objetivos), ¿cómo? (proceso y documentación), ¿cuándo? (fechas y plazos) y ¿dónde? (lugar o plataforma de registro). La omisión de cualquiera de estos elementos genera incertidumbre y reduce la participación o eleva las consultas al área organizadora.",
+  q:"Según el texto, omitir los requisitos de elegibilidad en una convocatoria genera ________ entre los potenciales participantes respecto a si pueden o no inscribirse.",
+  opts:["certeza y confianza","incertidumbre y dudas","interés y motivación"],
+  correct:1, expl:"El texto señala que 'la omisión de cualquiera de estos elementos genera incertidumbre'; al faltar la elegibilidad, los interesados no saben si califican, lo que produce duda e incertidumbre."
+},
+{
+  id:84, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"D",
+  pTitle:"Documentos del Proceso Electoral",
+  passage:"Los procesos electorales generan una amplia variedad de documentos institucionales, cada uno con funciones específicas dentro del ciclo democrático.",
+  q:"Relaciona cada documento electoral con su función dentro del proceso.",
+  leftItems:["Lista nominal de electores","Acta de escrutinio y cómputo","Convocatoria a elecciones"],
+  rightItems:["Registra los resultados de la votación en cada casilla al cierre del proceso","Informa a la ciudadanía la fecha, tipo de elección y procedimiento para votar","Contiene el padrón de ciudadanos con credencial vigente habilitados para votar"],
+  correctPairs:[[0,2],[1,0],[2,1]],
+  expl:"Lista nominal = ciudadanos habilitados para votar; Acta de escrutinio = resultados de casilla; Convocatoria = informa fecha y procedimiento."
+},
+{
+  id:85, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"A",
+  pTitle:"El Informe de Gestión",
+  passage:"El informe de gestión es el documento mediante el cual un servidor público o una institución dan cuenta de las acciones realizadas durante un período determinado en relación con los objetivos previamente establecidos. Para ser útil como herramienta de evaluación, debe articular claramente: los objetivos programados, las actividades ejecutadas, los indicadores de resultados alcanzados y las desviaciones respecto a la meta, acompañadas de su justificación.",
+  q:"¿Cuál de los siguientes elementos mencionados en el texto diferencia a un informe de gestión de una simple lista de actividades realizadas?",
+  opts:["La presentación cronológica de todas las acciones ejecutadas durante el período.","La articulación entre objetivos programados, resultados alcanzados y justificación de las desviaciones.","El uso de gráficas y tablas para visualizar los datos de manera atractiva."],
+  correct:1, expl:"El texto especifica que para ser útil como herramienta de evaluación el informe debe articular objetivos, actividades, indicadores y desviaciones con su justificación; eso lo distingue de una mera lista de actividades."
 }
 
-]; // fin BANCO_MODULO_A — v1.1 · 70 preguntas
+]; // fin BANCO_MODULO_A
