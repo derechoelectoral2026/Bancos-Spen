@@ -161,7 +161,7 @@ const BANCO_MODULO_B = [
   { sa:"1.4", sal:"Probabilidad", type:"order",
     q:"Ordena los pasos para calcular la probabilidad de dos eventos independientes A y B:",
     items:["Multiplicar P(A) × P(B)","Identificar P(A) y P(B) por separado","Verificar que A y B sean independientes"],
-    correctOrder:[0,1,2],
+    correctOrder:[2,1,0],
     ex:"Paso 1: Verificar independencia. &nbsp;Paso 2: Calcular cada probabilidad individual. &nbsp;Paso 3: Multiplicar." },
 
   // ═══════════════════════════════════════════════════════════
