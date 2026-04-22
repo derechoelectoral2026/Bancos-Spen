@@ -73,7 +73,7 @@ const BANCO_MODULO_B = [
     p:"Una casilla recibe votantes en proporción de 3:5 entre hombres y mujeres. En total votaron 480 personas.",
     pt:"Proporción de votantes",
     q:"¿Cuántas mujeres votaron en esa casilla?",
-    o:["160","280","300"], c:1,
+    o:["160","280","300"], c:2,
     ex:"Proporción total = 3+5 = 8 partes. Mujeres = (5/8) × 480 = <strong>300</strong>. Verifica: hombres = 180, mujeres = 300. Total = 480. ✓ La respuesta es 300." },
 
   { sa:"1.2", sal:"Aritmética", type:"blank",
