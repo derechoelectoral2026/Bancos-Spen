@@ -394,7 +394,7 @@ const BANCO_MODULO_C = [
     q:"¿Cuál es la composición de un Consejo Distrital del INE y qué tipo de órgano es la Junta Distrital Ejecutiva?",
     o:["El Consejo Distrital es permanente e integrado por 5 consejeros; la Junta Distrital es temporal.",
        "Ambos son órganos permanentes con las mismas funciones en cada uno de los 300 distritos.",
-       "El Consejo Distrital es un órgano temporal colegiado con un Consejero Presidente y 4 consejeros distritales que sesionan durante el proceso electoral; la Junta Distrital Ejecutiva es el órgano permanente técnico-operativo del distrito."],
+       "El Consejo Distrital es un órgano temporal colegiado con un Consejero Presidente y 6 consejeros distritales que sesionan durante el proceso electoral; la Junta Distrital Ejecutiva es el órgano permanente técnico-operativo del distrito."],
     c:2,
     ex:"En cada uno de los 300 distritos: la <strong>Junta Distrital Ejecutiva</strong> es el órgano permanente que opera todo el año. El <strong>Consejo Distrital</strong> es el órgano temporal colegiado que se instala durante el proceso electoral y toma decisiones directivas, presidido por el Vocal Ejecutivo Distrital." },
 
