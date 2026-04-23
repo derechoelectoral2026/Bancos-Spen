@@ -124,10 +124,10 @@ const BANCO_MODULO_B = [
 
   { sa:"1.3", sal:"Álgebra", type:"relation",
     q:"Relaciona cada expresión algebraica con su forma simplificada:",
-    left:["(x + 2)²", "x² − 4", "(x + 2)(x − 2)"],
-    right:["x² − 4","x² + 4x + 4","x² − 4 (igual resultado)"],
-    pairs:[1,0,0],
-    ex:"(x+2)² = x²+4x+4. &nbsp;x²−4 ya está simplificado. &nbsp;(x+2)(x−2) = x²−4 (diferencia de cuadrados)." },
+    left:["(x + 2)²", "(x - 2)²", "(x + 2)(x - 2)"],
+    right:["x² + 4x + 4", "x² - 4x + 4", "x² - 4"],
+    pairs:[0,1,2],
+    ex:"(x+2)² = x²+4x+4 (Binomio al cuadrado). <br> (x-2)² = x²-4x+4 (Binomio al cuadrado con resta). <br> (x+2)(x-2) = x²-4 (Diferencia de cuadrados)." },
 
   { sa:"1.3", sal:"Álgebra", type:"direct",
     p:null, pt:null,
@@ -307,8 +307,8 @@ const BANCO_MODULO_B = [
 //  1.4  Probabilidad  (+3 Qs)
 // ═══════════════════════════════════════════════════════════
 ,{ sa:"1.4", sal:"Probabilidad", type:"direct",
-   p:"En un proceso de selección de personal se tienen 5 candidatos aptos y 3 no aptos. Se elige uno al azar.",
-   pt:"Selección de personal",
+   p:"En un proceso de n de personal se tienen 5 candidatos aptos y 3 no aptos. Se elige uno al azar.",
+   pt:"n de personal",
    q:"¿Cuál es la probabilidad de elegir a un candidato <em>apto</em>?",
    o:["3/8","5/8","5/3"], c:1,
    ex:"Total candidatos: 8. Aptos: 5. P(apto) = 5/8." }
