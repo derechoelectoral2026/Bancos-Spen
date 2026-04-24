@@ -324,8 +324,8 @@ const BANK = [
    q:"¿Cuál es la diferencia entre una casilla ordinaria, una contigua y una extraordinaria?",
    o:["Son tres nombres para el mismo tipo de casilla; la diferencia es solo geográfica.",
       "La casilla ordinaria atiende a su sección; la contigua atiende a ciudadanos de secciones vecinas; la extraordinaria solo se instala en hospitales.",
-      "La casilla ordinaria atiende a los electores de una sección cuando son hasta 1,500; la contigua se instala en la misma ubicación cuando la sección supera ese número; la extraordinaria se ubica en lugares de alta concentración de personas fuera de su sección (hospitales, reclusorios)."],
-   c:2,ex:"Casilla ordinaria: hasta 1,500 electores de una sección. Casilla contigua: misma ubicación cuando la sección supera 1,500 electores (se divide el listado). Casilla extraordinaria: ubicada en lugares de concentración (hospitales, cárceles, terminales) para ciudadanos fuera de su sección o con impedimentos físicos."},
+      "La casilla ordinaria atiende a los electores de una sección cuando son hasta 750; la contigua se instala en la misma ubicación cuando la sección supera ese número; la extraordinaria se ubica en lugares de alta concentración de personas fuera de su sección (hospitales, reclusorios)."],
+   c:2,ex:"Casilla ordinaria: hasta 750 electores de una sección. Casilla contigua: misma ubicación cuando la sección supera 750 electores (se divide el listado). Casilla extraordinaria: ubicada en lugares de concentración (hospitales, cárceles, terminales) para ciudadanos fuera de su sección o con impedimentos físicos."},
 
   {sa:"4.2",sal:"Casillas electorales",area:"Organización de la elección",
    p:null,pt:null,
