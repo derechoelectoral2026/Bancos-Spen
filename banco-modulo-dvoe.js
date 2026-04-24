@@ -115,9 +115,9 @@ const BANK = [
    p:null,pt:null,
    q:"¿Cuál es el límite de votos que puede recibir una casilla especial y por qué existe ese límite?",
    o:["500 votos, para evitar largas filas en los puntos de alta afluencia.",
-      "300 votos, para garantizar que el escrutinio pueda realizarse en tiempo razonable y mantener el control de las boletas especiales.",
+      "1,000 boletas, para garantizar el derecho al voto de un mayor número de ciudadanos en tránsito, manteniendo un control operativo que permita realizar el escrutinio en un tiempo razonable.",
       "No existe límite; se atiende a todos los ciudadanos que se presenten."],
-   c:1,ex:"Cada casilla especial tiene un límite de 300 votos por elección. Una vez agotado ese número, la casilla deja de recibir votantes para esa elección. El límite garantiza la integridad del escrutinio y el control del material electoral en esas casillas de alta movilidad."},
+   c:1,ex:"Conforme al Acuerdo INE/CG57/2025 y la LGIPE, cada casilla especial cuenta con 1,000 boletas. El límite garantiza que la Mesa Directiva pueda realizar el escrutinio y cómputo en un tiempo razonable dado que el proceso en estas casillas es más complejo."},
 
   {sa:"2.2",sal:"Modalidades de voto anticipado",area:"Proceso electoral",
    p:null,pt:null,
