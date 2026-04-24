@@ -555,7 +555,7 @@ const BANCO_MODULO_A = [
   passage:"Una hipótesis de investigación no es una afirmación definitiva sino una proposición provisional que el investigador somete a prueba. Para ser científicamente válida debe cumplir tres condiciones: ser falsable (posible de refutar con evidencia empírica), ser específica (delimitar con claridad las variables y la relación esperada) y ser contrastable (disponer de indicadores medibles o registrables).",
   q:"¿Cuál de las siguientes formulaciones NO cumple los requisitos de una hipótesis científica válida según el fragmento?",
   opts:["El incremento del tiempo de capacitación semanal se asociará con una reducción de errores en el registro de datos.","Las personas con más experiencia son, en general, mejores en su trabajo.","A mayor número de revisores en el proceso editorial, menor será la tasa de errores publicados."],
-  correct:1, expl:"La opción B es vaga: no especifica variables medibles ni la relación esperada con precisión; no es falsable ni contrastable tal como está formulada."
+  correct:1, expl:"La opción A es vaga: no especifica variables medibles ni la relación esperada con precisión; no es falsable ni contrastable tal como está formulada."
 },
 {
   id:62, sub:"1.1", label:"Comprensión lectora – Ámbito de estudio", fmt:"B",
