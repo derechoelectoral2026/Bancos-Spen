@@ -197,8 +197,8 @@ const BANCO_MODULO_B = [
   { sa:"1.5", sal:"Estadística", type:"direct",
     p:null, pt:null,
     q:"Un conjunto de 8 datos tiene media = 50 y la suma de todos los datos es 400. Si se agrega un dato con valor 100, ¿cuál será la nueva media?",
-    o:["55","56","60"], c:0,
-    ex:"Nueva suma: 400+100 = 500. Nuevos datos: 9. Nueva media: 500/9 ≈ 55.6 ≈ <strong>55</strong> (redondeando al entero)." },
+    o:["55","56","60"], c:1,
+    ex:"Nueva suma: 400+100 = 500. Nuevos datos: 9. Nueva media: 500/9 ≈ 55.6 ≈ <strong>56</strong> (redondeando al entero)." },
 
   { sa:"1.5", sal:"Estadística", type:"blank",
     q:"Completa el enunciado:",
