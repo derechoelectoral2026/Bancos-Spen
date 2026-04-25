@@ -419,14 +419,14 @@ const BANCO_MODULO_C = [
     ex:"El SPEN tiene como finalidad constitucional garantizar que el personal que opera las elecciones (directivo, ejecutivo y técnico del INE y los OPLEs) sea profesional, imparcial e independiente, asegurando así la calidad y continuidad de la función electoral." },
 
   { sa:"3.3", sal:"Servicio Profesional Electoral Nacional",
-    ref:"ESPEN (2024), Arts. 14–28",
+    ref:"SPEN (2024), Arts. 14–28",
     p:null, pt:null,
     q:"¿Cuáles son las etapas del proceso de ingreso al SPEN mediante concurso de oposición conforme al Estatuto?",
     o:["Inscripción, examen psicométrico y designación directa por el Consejero Presidente.",
        "Solo presentación de currículum vitae y entrevista con el director ejecutivo del área vacante.",
-       "Convocatoria pública, cumplimiento de requisitos documentales, examen de conocimientos, evaluación de habilidades y entrevista, con resolución del Comité del SPEN."],
+       "Convocatoria pública, cumplimiento de requisitos documentales, examen de conocimientos, evaluación de psicométrica y entrevista, con resolución del Comité de la DESPEN."],
     c:2,
-    ex:"El Estatuto del SPEN (Arts. 14–28) establece un proceso de concurso de oposición que incluye: convocatoria pública, verificación de requisitos, examen de conocimientos técnicos, evaluación de habilidades y competencias, entrevista final y resolución del Comité del SPEN, garantizando objetividad e imparcialidad." },
+    ex:"El Estatuto del SPEN (Arts. 14–28) establece un proceso de concurso de oposición que incluye: convocatoria pública, verificación de requisitos, examen de conocimientos técnicos, evaluación psicométrica, entrevista y resolución de la DESPEN, garantizando objetividad e imparcialidad." },
 
   { sa:"1.1", sal:"Modelo constitucional",
     ref:"CPEUM (2025), Art. 41, Base I",
