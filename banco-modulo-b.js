@@ -433,7 +433,7 @@ const BANCO_MODULO_B = [
   sa:"1.3", sal:"Álgebra", type:"direct",
   p:null, pt:null,
   q:"Resuelve: 5(x − 3) + 2 = 3x + 7",
-  o:["x = 9","x = 10","x = 11"], c:0,
+  o:["x = 9","x = 10","x = 11"], c:1,
   ex:"5x−15+2 = 3x+7 → 5x−13 = 3x+7 → 2x = 20 → x = <strong>10</strong>. c=1."
 },
 {
