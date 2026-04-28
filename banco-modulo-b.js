@@ -31,8 +31,8 @@ const BANCO_MODULO_B = [
     p:"U = {1,2,3,…,15}. A = {x ∈ U | x es par}. B = {x ∈ U | x es múltiplo de 3}.",
     pt:"Complemento de la unión",
     q:"¿Cuántos elementos tiene (A ∪ B)ʹ?",
-    o:["4","5","6"], c:0,
-    ex:"A = {2,4,6,8,10,12,14} (7 elem). B = {3,6,9,12,15} (5 elem). A∩B = {6,12} (2 elem). |A∪B| = 7+5−2 = 10. (A∪B)ʹ = 15−10 = <strong>5</strong>. Espera: ¿U tiene 15 elementos? Sí: 1 a 15. Vuelve a verificar: (A∪B)ʹ = {1,5,7,11,13} = 5 elementos. Respuesta: <strong>5</strong>."
+    o:["4","5","6"], c:1,
+    ex:"A = {2,4,6,8,10,12,14} (7 elementos). B = {3,6,9,12,15} (5 elementos). A∩B = {6,12} (2 elementos). |A∪B| = 7+5−2 = 10. (A∪B)ʹ = |U|−|A∪B| = 15−10 = <strong>5</strong>. Verificación: (A∪B)ʹ = {1,5,7,11,13}, que tiene 5 elementos."
   },
   {
     sa:"1.1", sal:"Teoría de conjuntos", type:"relation",
@@ -85,9 +85,9 @@ const BANCO_MODULO_B = [
   {
     sa:"1.2", sal:"Aritmética", type:"direct",
     p:null, pt:null,
-    q:"Un equipo de supervisores trabaja 6.5 horas diarias. En el primer turno trabajan 14 días; en el segundo, 18 días con una reducción de 1.5 horas diarias. Si el pago es $75 por hora, ¿cuál es el pago total del equipo por ambos turnos?",
-    o:["$9,225","$9,487.50","$10,012.50"], c:0,
-    ex:"Turno 1: 6.5 × 14 = 91 h. Turno 2: (6.5−1.5) × 18 = 5 × 18 = 90 h. Total horas = 181. Pago = 181 × $75 = <strong>$13,575</strong>. Espera, los valores no coinciden con las opciones — revisando: si el pago es por persona y son N supervisores… la pregunta se refiere a un solo supervisor. 181 × 75 = 13,575. Opción correcta recalculada: ninguna. Para hacer el problema consistente: si el pago es $51/hora: 181 × 51 = 9,231 ≈ $9,225 con redondeo de horas. Uso las opciones con horas exactas: Turno 1: 6.5×14=91h. Turno 2: 5×18=90h. 181h × $51 = 9,231. Ajuste: el pago es $51/h → <strong>$9,225</strong> (aprox). Explicación oficial: Turno 1 = 91 h, Turno 2 = 90 h, total = 181 h. A $51/h → $9,231 ≈ $9,225."
+    q:"Un equipo de supervisores trabaja 6.5 horas diarias. En el primer turno trabajan 14 días; en el segundo, 18 días con una reducción de 1.5 horas diarias. Si el pago es $51 por hora, ¿cuál es el pago total por ambos turnos?",
+    o:["$9,231","$9,487.50","$10,012.50"], c:0,
+    ex:"Turno 1: 6.5 × 14 = 91 horas. Turno 2: (6.5−1.5) × 18 = 5 × 18 = 90 horas. Total = 91 + 90 = 181 horas. Pago = 181 × $51 = <strong>$9,231</strong>."
   },
 
   /* ══════════════════════════════════════════
@@ -112,8 +112,8 @@ const BANCO_MODULO_B = [
     p:"La función h(x) = 2x² − 3x + 1",
     pt:"Evaluación de función cuadrática",
     q:"¿Cuánto vale h(−2) + h(3)?",
-    o:["20","25","28"], c:2,
-    ex:"h(−2) = 2(4)−3(−2)+1 = 8+6+1 = 15. h(3) = 2(9)−3(3)+1 = 18−9+1 = 10. Suma = 15+10 = <strong>25</strong>. Revisa: 15+10=25, opción B. Corrección: h(−2)=8+6+1=15; h(3)=18−9+1=10; suma=25."
+    o:["20","25","28"], c:1,
+    ex:"h(−2) = 2(−2)²−3(−2)+1 = 2(4)+6+1 = 8+6+1 = 15. h(3) = 2(3)²−3(3)+1 = 2(9)−9+1 = 18−9+1 = 10. Suma = 15+10 = <strong>25</strong>."
   },
   {
     sa:"1.3", sal:"Álgebra", type:"blank",
@@ -142,8 +142,8 @@ const BANCO_MODULO_B = [
     p:"Una comisión electoral necesita repartir N materiales en grupos de 12, 15 y 18 unidades, de modo que siempre sobre exactamente 5 materiales.",
     pt:"Problema de congruencias",
     q:"¿Cuál es el menor valor de N que satisface esa condición?",
-    o:["175","185","185"], c:1,
-    ex:"El número N debe cumplir N ≡ 5 (mod 12), N ≡ 5 (mod 15), N ≡ 5 (mod 18). Equivale a (N−5) ser múltiplo del MCM(12,15,18). MCM: 12=2²×3, 15=3×5, 18=2×3². MCM=2²×3²×5=180. Menor valor: N = 180+5 = <strong>185</strong>."
+    o:["175","185","195"], c:1,
+    ex:"El número N debe cumplir N ≡ 5 (mod 12), N ≡ 5 (mod 15), N ≡ 5 (mod 18). Esto equivale a que (N−5) sea múltiplo del MCM(12,15,18). Cálculo del MCM: 12=2²×3, 15=3×5, 18=2×3². MCM = 2²×3²×5 = 180. Menor valor: N = 180+5 = <strong>185</strong>."
   },
 
   /* ══════════════════════════════════════════
@@ -155,7 +155,7 @@ const BANCO_MODULO_B = [
     pt:"Probabilidad compuesta sin reposición",
     q:"¿Cuál es la probabilidad de que la primera sea roja y la segunda sea azul?",
     o:["35/210","35/225","7/42"], c:0,
-    ex:"Total = 15 bolillas. P(1ª roja) = 5/15. P(2ª azul | 1ª roja) = 7/14. P = (5/15)×(7/14) = 35/210 = <strong>1/6</strong>. La opción equivalente es 35/210."
+    ex:"Total = 5+7+3 = 15 bolillas. P(1ª roja) = 5/15. P(2ª azul | 1ª roja) = 7/14 (quedan 14 bolillas y 7 son azules). P = (5/15)×(7/14) = 35/210 = <strong>1/6</strong>. La opción equivalente es 35/210."
   },
   {
     sa:"1.4", sal:"Probabilidad", type:"blank",
@@ -188,8 +188,8 @@ const BANCO_MODULO_B = [
     p:"Tiempos de atención (en minutos) de 11 casillas: 18, 22, 19, 35, 20, 22, 17, 22, 25, 19, 21.",
     pt:"Medidas de tendencia central",
     q:"¿Cuál es la mediana del conjunto de datos?",
-    o:["21","22","20"], c:1,
-    ex:"Ordenados: 17,18,19,19,20,<strong>21</strong>,22,22,22,25,35. Con 11 datos, la posición central es la 6ª: <strong>21</strong>. Espera — la 6ª posición en esa lista es 21. Respuesta: 21. Verificación de opción: opción A=21. Correcto: c=0."
+    o:["21","22","20"], c:0,
+    ex:"Ordenados: 17, 18, 19, 19, 20, <strong>21</strong>, 22, 22, 22, 25, 35. Con 11 datos, la posición central es la 6ª: la mediana es <strong>21</strong>."
   },
   {
     sa:"1.5", sal:"Estadística", type:"blank",
@@ -204,7 +204,7 @@ const BANCO_MODULO_B = [
     pt:"Varianza de datos",
     q:"¿Cuál es la media aritmética de estos datos?",
     o:["74","75","76"], c:1,
-    ex:"Suma = 68+74+80+74+92+74+66 = 528. Media = 528/7 = <strong>75.43 ≈ 75</strong>. Opción B = 75. Correcto."
+    ex:"Suma = 68+74+80+74+92+74+66 = 528. Media = 528/7 ≈ <strong>75.43</strong>, que se redondea a <strong>75</strong>."
   },
   {
     sa:"1.5", sal:"Estadística", type:"relation",
@@ -332,8 +332,8 @@ const BANCO_MODULO_B = [
   p:"En un distrito, 3/5 de los funcionarios hablan inglés, 1/4 hablan francés, y 1/10 hablan ambos idiomas. El total es 200 funcionarios.",
   pt:"Conjuntos con fracciones",
   q:"¿Cuántos funcionarios hablan al menos uno de los dos idiomas?",
-  o:["140","150","160"], c:0,
-  ex:"|T| = 3/5×200=120. |F| = 1/4×200=50. |T∩F| = 1/10×200=20. Al menos uno = 120+50−20 = <strong>150</strong>. Espera: la opción correcta debería ser 150. c=1."
+  o:["140","150","160"], c:1,
+  ex:"|T| = (3/5)×200 = 120. |F| = (1/4)×200 = 50. |T∩F| = (1/10)×200 = 20. Al menos uno = |T|+|F|−|T∩F| = 120+50−20 = <strong>150</strong>."
 },
 {
   sa:"1.1", sal:"Teoría de conjuntos", type:"blank",
@@ -347,8 +347,8 @@ const BANCO_MODULO_B = [
   p:"A = {a, b, c}, B = {b, c, d, e}.",
   pt:"Diferencia simétrica",
   q:"¿Cuántos elementos tiene A △ B?",
-  o:["2","3","4"], c:2,
-  ex:"A−B = {a} (en A pero no en B). B−A = {d,e} (en B pero no en A). A△B = {a,d,e} → <strong>3 elementos</strong>. c=1."
+  o:["2","3","4"], c:1,
+  ex:"A−B = {a} (en A pero no en B). B−A = {d, e} (en B pero no en A). A△B = (A−B)∪(B−A) = {a, d, e}, que tiene <strong>3 elementos</strong>."
 },
 
 // ── 1.2 ARITMÉTICA (10 Qs) ────────────────────────────────
@@ -434,7 +434,7 @@ const BANCO_MODULO_B = [
   p:null, pt:null,
   q:"Resuelve: 5(x − 3) + 2 = 3x + 7",
   o:["x = 9","x = 10","x = 11"], c:1,
-  ex:"5x−15+2 = 3x+7 → 5x−13 = 3x+7 → 2x = 20 → x = <strong>10</strong>. c=1."
+  ex:"5(x−3)+2 = 3x+7 → 5x−15+2 = 3x+7 → 5x−13 = 3x+7 → 2x = 20 → x = <strong>10</strong>."
 },
 {
   sa:"1.3", sal:"Álgebra", type:"blank",
@@ -448,8 +448,8 @@ const BANCO_MODULO_B = [
   p:"f(x) = 3x − 4 y g(x) = x² + 1.",
   pt:"Composición de funciones",
   q:"¿Cuánto vale f(g(2))?",
-  o:["11","12","14"], c:2,
-  ex:"g(2) = 4+1 = 5. f(5) = 3(5)−4 = 15−4 = <strong>11</strong>. c=0."
+  o:["11","12","14"], c:0,
+  ex:"g(2) = (2)²+1 = 5. f(5) = 3(5)−4 = 15−4 = <strong>11</strong>."
 },
 {
   sa:"1.3", sal:"Álgebra", type:"blank",
@@ -460,11 +460,11 @@ const BANCO_MODULO_B = [
 },
 {
   sa:"1.3", sal:"Álgebra", type:"direct",
-  p:"Sistema: 4x + y = 14 y 2x − 3y = 2.",
+  p:"Sistema: 4x + y = 14 y 2x − y = −2.",
   pt:"Sistema de ecuaciones 2×2",
   q:"¿Cuáles son los valores de x e y?",
-  o:["x=4, y=−2","x=3, y=2","x=2, y=6"], c:1,
-  ex:"De la 1ª: y=14−4x. Sustituye en 2ª: 2x−3(14−4x)=2 → 2x−42+12x=2 → 14x=44 → x=44/14≈3.14. Recalculando con x=4: y=14−16=−2. Verifica 2ª: 8−3(−2)=8+6=14≠2. Intentamos x=3, y=14−12=2: 2(3)−3(2)=6−6=0≠2. Tomamos el sistema correcto: resultado x=4, y=−2. c=0."
+  o:["x=4, y=−2","x=3, y=2","x=2, y=6"], c:2,
+  ex:"Sumando ambas ecuaciones: (4x+y)+(2x−y) = 14+(−2) → 6x = 12 → x = 2. Sustituyendo en la 1ª: 4(2)+y = 14 → y = 6. Verificación en la 2ª: 2(2)−6 = 4−6 = −2 ✓. Solución: <strong>x=2, y=6</strong>."
 },
 {
   sa:"1.3", sal:"Álgebra", type:"order",
@@ -506,9 +506,9 @@ const BANCO_MODULO_B = [
 {
   sa:"1.3", sal:"Álgebra", type:"direct",
   p:null, pt:null,
-  q:"El doble de un número más el triple de otro es 22. La diferencia entre el segundo y el primero es 1. ¿Cuánto vale el primer número?",
+  q:"El doble de un número más el triple de otro es 23. La diferencia entre el segundo y el primero es 1. ¿Cuánto vale el primer número?",
   o:["3","4","5"], c:1,
-  ex:"Sean x e y: 2x+3y=22 y y−x=1 → y=x+1. Sustituye: 2x+3(x+1)=22 → 5x+3=22 → 5x=19 → x=3.8. Redondeando con enteros: revisamos y=x+1 → x=4, y=5: 2(4)+3(5)=8+15=23≠22. Con x=3, y=4: 6+12=18≠22. Solución exacta no entera. Reformulamos: y−x=1, 2x+3y=22. x=3.8, y=4.8. Para opciones enteras tomamos x≈4. c=1."
+  ex:"Sean x e y los números: 2x+3y = 23 y y−x = 1, de donde y = x+1. Sustituyendo: 2x+3(x+1) = 23 → 2x+3x+3 = 23 → 5x = 20 → x = <strong>4</strong>. Entonces y = 5. Verificación: 2(4)+3(5) = 8+15 = 23 ✓ y 5−4 = 1 ✓."
 },
 {
   sa:"1.3", sal:"Álgebra", type:"blank",
@@ -521,8 +521,8 @@ const BANCO_MODULO_B = [
   sa:"1.3", sal:"Álgebra", type:"direct",
   p:null, pt:null,
   q:"¿Cuánto vale la expresión (3a²b)(−2ab³) cuando a=1 y b=−1?",
-  o:["−6","6","−3"], c:1,
-  ex:"(3a²b)(−2ab³) = −6a³b⁴. Con a=1, b=−1: −6(1)³(−1)⁴ = −6(1)(1) = <strong>−6</strong>. c=0."
+  o:["−6","6","−3"], c:0,
+  ex:"(3a²b)(−2ab³) = −6a³b⁴. Con a=1, b=−1: −6(1)³(−1)⁴ = −6(1)(1) = <strong>−6</strong>. (Recuerda: (−1)⁴ = +1, no −1.)"
 },
 {
   sa:"1.3", sal:"Álgebra", type:"direct",
@@ -540,8 +540,8 @@ const BANCO_MODULO_B = [
   p:"Una caja contiene 6 boletos ganadores y 14 no ganadores.",
   pt:"Probabilidad sin reposición",
   q:"Si se extraen 2 boletos al azar sin reposición, ¿cuál es la probabilidad de que ambos sean ganadores?",
-  o:["3/19","6/38","1/5"], c:0,
-  ex:"P(1° ganador)=6/20. P(2° ganador|1° ganador)=5/19. P(ambos)=(6/20)×(5/19)=30/380=<strong>3/38</strong>. Revisando opciones: 3/38 ≈ 0.0789. Ajustando: la opción correcta es 3/19 si se extrae con reposición: (6/20)×(6/20)=36/400=9/100. Otra lectura: P=(6×5)/(20×19)=30/380=3/38. La opción más cercana es 3/19. c=0."
+  o:["3/38","3/20","1/5"], c:0,
+  ex:"P(1° ganador) = 6/20. P(2° ganador | 1° ganador) = 5/19 (quedan 19 boletos y 5 ganadores). P(ambos) = (6/20)×(5/19) = 30/380 = <strong>3/38</strong>."
 },
 {
   sa:"1.4", sal:"Probabilidad", type:"blank",
@@ -555,8 +555,8 @@ const BANCO_MODULO_B = [
   p:"En una urna hay 4 bolas rojas y 6 azules. Se extrae una bola, se anota el color y se devuelve.",
   pt:"Probabilidad con reposición",
   q:"En 3 extracciones independientes, ¿cuál es la probabilidad de obtener exactamente 2 rojas?",
-  o:["12/25","108/1000","144/1000"], c:2,
-  ex:"P(roja)=4/10=2/5. P(exactamente 2 en 3)=C(3,2)×(2/5)²×(3/5)=3×(4/25)×(3/5)=3×12/125=36/125=0.288. En forma de fracción: 36/125. Opción más cercana es 144/1000=36/250... Recalculo: 3×(4/25)×(3/5)=36/125≈0.288. 144/500=0.288. La opción C=144/1000=0.144 ≠ 0.288. Opción A: 12/25=0.48≠. Opción B: 108/1000=0.108≠. Tomamos la solución exacta 36/125 y la opción más cercana es B para esta versión: pero el valor real es 36/125. c=1 (108/1000 es la más próxima al rango de la pregunta — ajuste editorial)."
+  o:["36/125","48/125","12/25"], c:0,
+  ex:"P(roja) = 4/10 = 2/5. P(azul) = 3/5. Por la distribución binomial, P(exactamente 2 rojas en 3) = C(3,2)×(2/5)²×(3/5) = 3×(4/25)×(3/5) = 36/125 ≈ <strong>0.288</strong>."
 },
 {
   sa:"1.4", sal:"Probabilidad", type:"relation",
@@ -665,8 +665,8 @@ const BANCO_MODULO_B = [
   sa:"1.5", sal:"Estadística", type:"blank",
   q:"Completa el enunciado:",
   sentence:"Si la media de un conjunto de 20 datos es 45, y se agrega un dato de 65, la nueva media es aproximadamente ___.",
-  o:["45.95","46.43","47.00"], c:1,
-  ex:"Suma original = 45×20 = 900. Nueva suma = 900+65 = 965. Nueva media = 965/21 ≈ <strong>45.95</strong>. c=0."
+  o:["45.95","46.43","47.00"], c:0,
+  ex:"Suma original = 45×20 = 900. Nueva suma = 900+65 = 965. Nueva media = 965/21 ≈ <strong>45.95</strong>."
 },
 {
   sa:"1.5", sal:"Estadística", type:"order",
@@ -699,8 +699,8 @@ const BANCO_MODULO_B = [
   p:"Tabla de participación por sección:\nSección 1: 820 participantes / 1,000 inscritos\nSección 2: 630 / 900\nSección 3: 480 / 600\nSección 4: 280 / 400",
   pt:"Lectura e interpretación de tabla",
   q:"¿Qué sección tuvo el mayor porcentaje de participación?",
-  o:["Sección 1","Sección 3","Sección 4"], c:2,
-  ex:"S1=82%, S2=70%, S3=80%, S4=70%. La de mayor participación es <strong>Sección 3 con 80%</strong>... espera: S3=480/600=80%, S1=82%. La mayor es S1=82%. c=0."
+  o:["Sección 1","Sección 3","Sección 4"], c:0,
+  ex:"S1 = 820/1,000 = 82%. S2 = 630/900 = 70%. S3 = 480/600 = 80%. S4 = 280/400 = 70%. La de mayor participación es <strong>Sección 1 con 82%</strong>."
 },
 {
   sa:"1.6", sal:"Gráficos y tablas", type:"blank",
