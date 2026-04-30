@@ -682,11 +682,11 @@ const BANCO_MODULO_C = [
     ref:"LGIPE (2024), Arts. 363–368",
     p:null, pt:null,
     q:"¿Cuál es el financiamiento público al que tienen derecho los candidatos independientes y cómo se determina?",
-    o:["Tienen derecho a financiamiento público equivalente al que corresponde al partido político que haya obtenido el mayor número de votos en la elección inmediata anterior, en la misma fórmula o cargo.",
+    o:["Recibirán el financiamiento que correspondería a un partido de nuevo registro, distribuido equitativamente por tipo de cargo. Cabe destacar que ningún candidato individual podrá recibir más del 50% del monto total asignado a su categoría.",
        "No tienen derecho a financiamiento público; solo pueden financiarse con aportaciones privadas.",
        "El Consejo General del INE determina libremente el monto del financiamiento para cada candidatura independiente sin fórmula establecida."],
     c:0,
-    ex:"El Art. 368 LGIPE establece que los candidatos independientes tienen derecho a financiamiento público equivalente al del partido político que más financiamiento reciba para la misma elección. Esto garantiza condiciones de competencia mínimas para los candidatos no partidistas." },
+    ex:"Los Arts. 407 y 408 de la LGIPE establecen que los candidatos independientes recibirán, en conjunto, el financiamiento equivalente a un partido de nuevo registro. Este se divide en tercios iguales para las campañas de Presidencia, Senadurías y Diputaciones, con un tope individual del 50% de la categoría correspondiente." },
 
   { sa:"2.6", sal:"Proceso Electoral Federal",
     ref:"LGIPE (2024), Arts. 218–226",
