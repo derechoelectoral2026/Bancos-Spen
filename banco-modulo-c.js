@@ -679,7 +679,7 @@ const BANCO_MODULO_C = [
     ex:"El Art. 357 LGIPE prohíbe que quien aspire a una candidatura independiente sea militante activo de algún partido político al momento de presentar su manifestación de intención. Esto busca preservar el carácter genuinamente independiente de la candidatura, distinto del mecanismo partidista." },
 
   { sa:"2.5", sal:"Candidaturas independientes",
-    ref:"LGIPE (2024), Arts. 363–368",
+    ref:"LGIPE (2024), Arts. 407–408",
     p:null, pt:null,
     q:"¿Cuál es el financiamiento público al que tienen derecho los candidatos independientes y cómo se determina?",
     o:["Recibirán el financiamiento que correspondería a un partido de nuevo registro, distribuido equitativamente por tipo de cargo. Cabe destacar que ningún candidato individual podrá recibir más del 50% del monto total asignado a su categoría.",
