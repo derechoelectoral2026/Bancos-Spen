@@ -243,10 +243,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Cuántos integrantes tiene una Mesa Directiva de Casilla y cuáles son sus cargos?",
     o:["Tres integrantes: Presidente, Secretario y un Escrutador",
-       "Cuatro integrantes: Presidente, Secretario y dos Escrutadores, cada uno con su respectivo suplente",
+       "Nueve integrantes: Presidente, dos Secretarios, tres Escrutadores y tres suplentes.",
        "Cinco integrantes: Presidente, Vicepresidente, Secretario y dos Escrutadores sin suplentes"],
     c:1,
-    ex:"Conforme a la LGIPE, la Mesa Directiva de Casilla se integra por cuatro ciudadanos propietarios: un Presidente, un Secretario y dos Escrutadores, y cuatro ciudadanos suplentes (uno por cada cargo). El Presidente es el responsable del orden y desarrollo de la jornada; el Secretario lleva el control de la documentación; los Escrutadores realizan el conteo de votos." },
+    ex:"En procesos concurrentes, la Mesa Directiva de Casilla se integra por 9 ciudadanos: 6 propietarios (1 Presidente, 2 Secretarios y 3 Escrutadores) y 3 suplentes generales. Esta estructura permite el escrutinio y cómputo simultáneo de elecciones federales y locales." },
 
   { sa:"4.1", sal:"Procedimientos sustantivos del proceso electoral", area:"Proceso electoral",
     p:null, pt:null,
