@@ -356,11 +356,11 @@ const Q=[
 
 {sa:"4.1",sal:"Formación y actualización del Registro Federal de Electores",area:"Padrón Electoral y lista nominal",cx:false,
  p:null,pt:null,mt:null,
- q:"¿Qué es el Sistema de Información del Registro Federal de Electores (SIRE) y para qué sirve?",
+ q:"¿Qué es el Sistema Integral de Información del Registro Federal de Electores (SIIRFE) y para qué sirve?",
  o:["Es el sistema que usan los funcionarios de casilla para verificar en tiempo real si un ciudadano tiene derecho a votar.",
     "Es la plataforma tecnológica de la DERFE que integra, procesa y actualiza los datos del padrón, las listas nominales y la geografía electoral.",
     "Es el nombre del portal web donde los ciudadanos pueden consultar si ya tienen su credencial para votar lista para recoger."],
- c:1,ex:"El SIRE es la plataforma tecnológica central de la DERFE que integra los datos del padrón electoral, las listas nominales, la cartografía y los movimientos del registro. Permite la actualización permanente y la generación de los documentos electorales que se usan en cada proceso electoral."},
+ c:1,ex:"El SIIRFE es la infraestructura tecnológica de la DERFE diseñada para gestionar integralmente la base de datos del Padrón Electoral y la Lista Nominal. Su función principal es garantizar la veracidad de la información mediante el procesamiento de movimientos registrales y la actualización de la cartografía electoral."},
 
 {sa:"4.1",sal:"Formación y actualización del Registro Federal de Electores",area:"Padrón Electoral y lista nominal",cx:true,
  p:null,pt:null,
