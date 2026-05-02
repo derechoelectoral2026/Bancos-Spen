@@ -692,11 +692,11 @@ const BANCO_MODULO_C = [
     ref:"LGIPE (2024), Arts. 218–226",
     p:null, pt:null,
     q:"¿Cuándo inicia y cuándo concluye el proceso electoral federal ordinario conforme a la LGIPE?",
-    o:["Inicia el primer día de septiembre del año previo a la elección y concluye con la declaración de validez de la elección presidencial por el TEPJF.",
+    o:["Inicia en septiembre del año previo a la elección y concluye con la declaración de validez de la elección presidencial por el TEPJF.",
        "Inicia en enero del año de la elección y concluye al instalarse el nuevo Congreso.",
        "Inicia el día de la convocatoria pública emitida por el INE y concluye el día de la jornada electoral."],
     c:0,
-    ex:"El Art. 225 LGIPE establece que el proceso electoral federal ordinario inicia en septiembre del año previo a la elección y concluye con las declaraciones de validez de las elecciones o, en su caso, con las resoluciones del TEPJF que pongan fin a los medios de impugnación." },
+    ex:"El Art. 225 de la LGIPE establece originalmente que el proceso electoral inicia en septiembre. Aunque una reforma de marzo de 2023 pretendía cambiar la fecha a octubre, la SCJN declaró dicha reforma inconstitucional e inválida. Por lo tanto, el texto recuperó su vigencia original, confirmando que el proceso electoral federal ordinario debe iniciar en septiembre del año previo a la elección." },
 
   { sa:"2.6", sal:"Proceso Electoral Federal",
     ref:"LGIPE (2024), Arts. 238–258",
