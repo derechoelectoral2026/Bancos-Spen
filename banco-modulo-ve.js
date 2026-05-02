@@ -207,10 +207,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Cuándo inicia formalmente el proceso electoral federal ordinario conforme a la LGIPE?",
     o:["El 1 de enero del año de la elección, con la publicación del calendario electoral en el DOF",
-       "En septiembre del año previo a la elección, con la primera sesión del Consejo General del INE en que se declare el inicio del proceso",
+       "El proceso electoral federal ordinario debe iniciar en septiembre del año previo a la elección.",
        "El 1 de octubre del año previo a la elección, cuando el INE convoca públicamente el proceso"],
     c:1,
-    ex:"Conforme al Art. 225 de la LGIPE, el proceso electoral federal ordinario inicia en septiembre del año previo al de la elección, con la primera sesión que el Consejo General celebre en ese mes, en la cual se declara formalmente el inicio del proceso. A partir de ese momento comienzan a correr todos los plazos y etapas del calendario electoral." },
+    ex:"El Art. 225 de la LGIPE establece originalmente que el proceso electoral inicia en septiembre. Aunque una reforma de marzo de 2023 pretendía cambiar la fecha a octubre, la SCJN declaró dicha reforma inconstitucional e inválida. Por lo tanto, el texto recuperó su vigencia original, confirmando que el proceso electoral federal ordinario debe iniciar en septiembre del año previo a la elección." },
 
   { sa:"4.1", sal:"Procedimientos sustantivos del proceso electoral", area:"Proceso electoral",
     p:null, pt:null,
