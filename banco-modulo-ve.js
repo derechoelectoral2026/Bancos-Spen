@@ -270,10 +270,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Qué son las casillas especiales y para qué ciudadanos se instalan?",
     o:["Son casillas de emergencia que se instalan cuando una casilla ordinaria no puede funcionar por causa de fuerza mayor",
-       "Son casillas instaladas en puntos estratégicos para que voten los ciudadanos que el día de la jornada se encuentran fuera de su sección electoral por razones de tránsito o trabajo, y que solo pueden votar para Presidente de la República",
+       "Son casillas instaladas en puntos estratégicos para que voten los ciudadanos que el día de la jornada se encuentran fuera de su sección electoral por razones de tránsito o trabajo, y que solo pueden votar para Presidente de la República y Senadores",
        "Son casillas exclusivas para ciudadanos con discapacidad, instaladas en hospitales y centros de salud"],
     c:1,
-    ex:"Las casillas especiales son instaladas por el INE en lugares de afluencia ciudadana (centrales camioneras, aeropuertos, plazas) para permitir que los ciudadanos que el día de la elección se encuentran fuera de su sección electoral ejerzan su derecho al voto. Conforme a la LGIPE, en estas casillas solo se puede votar para Presidente de la República (en elecciones en que así corresponda) o para los cargos de ámbito nacional." },
+    ex:"Las casillas especiales son instaladas por el INE en lugares de afluencia ciudadana (centrales camioneras, aeropuertos, plazas) para permitir que los ciudadanos que el día de la elección se encuentran fuera de su sección electoral ejerzan su derecho al voto. Conforme a la LGIPE, en estas casillas solo se puede votar para Presidente de la República y Senadores." },
 
   { sa:"4.1", sal:"Procedimientos sustantivos del proceso electoral", area:"Proceso electoral",
     p:null, pt:null,
