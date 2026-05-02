@@ -279,10 +279,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Qué documentos integran el expediente de casilla al final de la jornada electoral?",
     o:["Únicamente el Acta de la Jornada Electoral y las boletas sobrantes",
-       "El Acta de instalación, el Acta de la Jornada Electoral, las actas de escrutinio y cómputo por tipo de elección, el acta de incidentes, la lista nominal utilizada, los talones de boletas y demás documentación generada durante la jornada",
+       "El Acta de instalación, el Acta de la Jornada Electoral, las actas de escrutinio y cómputo por tipo de elección, hoja de incidentes, la lista nominal utilizada, los talones de boletas y demás documentación generada durante la jornada",
        "Solo las boletas utilizadas y el acta de cierre de votación firmada por el Presidente de Casilla"],
     c:1,
-    ex:"El expediente de casilla es el conjunto de documentos que acreditan la legalidad de la jornada electoral en esa sección. Incluye el Acta de Instalación, el Acta de la Jornada Electoral, las actas de escrutinio y cómputo por cada tipo de elección, el Acta de Incidentes, la lista nominal utilizada, los talones de boletas inutilizadas y demás documentación. Su correcta integración es fundamental para evitar la nulidad de la votación." },
+    ex:"El expediente de casilla es el conjunto de documentos que acreditan la legalidad de la jornada electoral en esa sección. Incluye el Acta de Instalación, el Acta de la Jornada Electoral, las actas de escrutinio y cómputo por cada tipo de elección, Hoja de Incidentes, la lista nominal utilizada, los talones de boletas inutilizadas y demás documentación. Su correcta integración es fundamental para evitar la nulidad de la votación." },
 
   { sa:"4.1", sal:"Procedimientos sustantivos del proceso electoral", area:"Proceso electoral",
     p:null, pt:null,
