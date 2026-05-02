@@ -159,10 +159,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Cuál es la estructura de la Junta Distrital Ejecutiva del INE conforme a la LGIPE?",
     o:["Está integrada por el Vocal Ejecutivo, el Vocal del Registro Federal de Electores y dos representantes de partidos políticos con voz y voto",
-       "Está integrada por el Vocal Ejecutivo (quien la preside), el Vocal del Registro Federal de Electores, el Vocal de Organización Electoral, el Vocal de Capacitación Electoral y Educación Cívica, y el Vocal de Administración",
+       "Está integrada por el Vocal Ejecutivo (quien la preside), el Vocal del Registro Federal de Electores, el Vocal de Organización Electoral, el Vocal de Capacitación Electoral y Educación Cívica, y la o el Vocal Secretaria/o",
        "Está presidida por el Consejero Electoral designado por el Consejo General para cada distrito"],
     c:1,
-    ex:"Conforme al Art. 90 de la LGIPE, la Junta Distrital Ejecutiva está integrada por cinco Vocales: el Vocal Ejecutivo (quien la preside), el Vocal del Registro Federal de Electores, el Vocal de Organización Electoral, el Vocal de Capacitación Electoral y Educación Cívica, y el Vocal de Administración. Es el órgano ejecutivo del INE en el distrito." },
+    ex:"Conforme al Art. 90 de la LGIPE, la Junta Distrital Ejecutiva está integrada por cinco Vocales: el Vocal Ejecutivo (quien la preside), el Vocal del Registro Federal de Electores, el Vocal de Organización Electoral, el Vocal de Capacitación Electoral y Educación Cívica, y el Vocal Secretario. Es el órgano ejecutivo del INE en el distrito." },
 
   { sa:"3.1", sal:"Órganos desconcentrados", area:"Instituto Nacional Electoral",
     p:null, pt:null,
@@ -361,12 +361,12 @@ const Q = [
 
   { sa:"5.1", sal:"Recursos financieros y materiales", area:"Gestión administrativa institucional",
     p:null, pt:null,
-    q:"¿Cuál es la función del Vocal de Administración en la Junta Distrital Ejecutiva respecto a los recursos financieros?",
+    q:"¿Cuál es la función del Vocal de Secretario en la Junta Distrital Ejecutiva respecto a los recursos financieros?",
     o:["Solo elabora los informes mensuales de gasto; no tiene facultades de autorización ni supervisión",
        "Es responsable de la administración de los recursos humanos, financieros y materiales asignados a la Junta Distrital, supervisando el ejercicio del presupuesto, el control del inventario y el cumplimiento de las normas administrativas del INE",
        "Solo maneja la caja chica del distrito y no tiene responsabilidad sobre los recursos presupuestales"],
     c:1,
-    ex:"El Vocal de Administración es el responsable directo de la gestión administrativa del órgano desconcentrado. Sus funciones incluyen administrar el presupuesto asignado al distrito, controlar el inventario de bienes muebles, gestionar los recursos humanos (nómina, prestaciones, contratos temporales), y asegurarse de que el ejercicio del gasto se realice conforme a las normas administrativas, financieras y de adquisiciones del INE." },
+    ex:"La o el Vocal Secreatario es el responsable directo de la gestión administrativa del órgano desconcentrado. Sus funciones incluyen administrar el presupuesto asignado al distrito, controlar el inventario de bienes muebles, gestionar los recursos humanos (nómina, prestaciones, contratos temporales), y asegurarse de que el ejercicio del gasto se realice conforme a las normas administrativas, financieras y de adquisiciones del INE." },
 
   { sa:"5.1", sal:"Recursos financieros y materiales", area:"Gestión administrativa institucional",
     p:null, pt:null,
