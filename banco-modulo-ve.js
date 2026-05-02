@@ -207,7 +207,7 @@ const Q = [
     p:null, pt:null,
     q:"¿Cuándo inicia formalmente el proceso electoral federal ordinario conforme a la LGIPE?",
     o:["El 1 de enero del año de la elección, con la publicación del calendario electoral en el DOF",
-       "En septiebre del año previo a la elección, con la primera sesión del Consejo General del INE en que se declare el inicio del proceso",
+       "En septiembre del año previo a la elección, con la primera sesión del Consejo General del INE en que se declare el inicio del proceso",
        "El 1 de octubre del año previo a la elección, cuando el INE convoca públicamente el proceso"],
     c:1,
     ex:"Conforme al Art. 225 de la LGIPE, el proceso electoral federal ordinario inicia en septiembre del año previo al de la elección, con la primera sesión que el Consejo General celebre en ese mes, en la cual se declara formalmente el inicio del proceso. A partir de ese momento comienzan a correr todos los plazos y etapas del calendario electoral." },
