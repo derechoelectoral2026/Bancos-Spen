@@ -369,14 +369,14 @@ const BANCO_MODULO_C = [
     ex:"El Art. 35 LGIPE establece que el Consejo General sesionará con la presencia de al menos 7 de sus consejeros electorales y las resoluciones se adoptarán por mayoría de votos de los presentes, con voto de calidad del Consejero Presidente en caso de empate, salvo mayorías calificadas especiales." },
 
   { sa:"3.2", sal:"Órganos del INE",
-    ref:"LGIPE (2024), Arts. 91–100",
+    ref:"LGIPE (2024), Arts. 47.1 LGIPE",
     p:null, pt:null,
-    q:"¿Cuál es la diferencia funcional entre la Junta General Ejecutiva y la Secretaría Ejecutiva del INE?",
+    q:"¿Cómo está conformada y por quien será presidida la Junta General Ejecutiva?",
     o:["Son el mismo órgano con distinto nombre según la función que desempeñen.",
        "La Secretaría Ejecutiva tiene funciones jurisdiccionales; la Junta General Ejecutiva tiene funciones administrativas.",
-       "La Junta General Ejecutiva es el órgano colegiado permanente de coordinación técnico-ejecutiva; la Secretaría Ejecutiva es un cargo unipersonal cuyo titular preside la Junta y es el responsable ejecutivo de la institución."],
+       "La Junta General Ejecutiva será presidida por el Presidente del Consejo General y se integrará con el Secretario Ejecutivo y con los directores ejecutivos del Registro Federal de Electores, de Prerrogativas y Partidos Políticos, de Organización Electoral, del Servicio Profesional Electoral Nacional, de Capacitación Electoral y Educación Cívica, y de Administración."],
     c:2,
-    ex:"La Junta General Ejecutiva (Arts. 91–100 LGIPE) es el órgano colegiado que coordina a las Direcciones Ejecutivas; la Secretaría Ejecutiva es el cargo de su titular, quien actúa como máximo responsable ejecutivo del INE, convoca y preside la Junta y da fe de sus resoluciones." },
+    ex:"La Junta General Ejecutiva será presidida por el Presidente del Consejo General y se integrará con el Secretario Ejecutivo y con los directores ejecutivos del Registro Federal de Electores, de Prerrogativas y Partidos Políticos, de Organización Electoral, del Servicio Profesional Electoral Nacional, de Capacitación Electoral y Educación Cívica y de Administración, así como los titulares de la Unidad Técnica de Fiscalización, de la Unidad Técnica de lo Contencioso Electoral y de la Unidad Técnica de Vinculación con los Organismos Públicos Locales." },
 
   { sa:"3.2", sal:"Órganos del INE",
     ref:"LGIPE (2024), Arts. 125–162",
