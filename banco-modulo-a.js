@@ -487,7 +487,7 @@ const BANCO_MODULO_A = [
   passage:"Los acuerdos institucionales requieren tres elementos para garantizar su cumplimiento: acción específica redactada en infinitivo, responsable nominado con nombre o cargo, y fecha límite precisa. La ausencia de cualquiera de estos elementos convierte al acuerdo en una declaración de intención sin mecanismo de seguimiento posible.",
   q:"¿Cuál de los siguientes es un acuerdo institucional correctamente redactado?",
   opts:["Mejorar la comunicación con las áreas operativas durante el próximo trimestre.","Elaborar el diagnóstico de necesidades de capacitación: responsable Coordinación de RRHH, fecha límite: 30 de junio.","Se acordó que el equipo hará lo necesario para atender el problema señalado."],
-  correct:1, expl:"Solo la opción B cumple los tres requisitos: acción en infinitivo ('elaborar'), responsable nominado ('Coordinación de RRHH') y fecha precisa ('30 de junio')."
+  correct:1, expl:"Solo la opción C cumple los tres requisitos: acción en infinitivo ('elaborar'), responsable nominado ('Coordinación de RRHH') y fecha precisa ('30 de junio')."
 },
 {
   id:54, sub:"2.2", label:"Redacción indirecta – Ámbito de participación social", fmt:"B",
