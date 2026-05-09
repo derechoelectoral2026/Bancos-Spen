@@ -527,7 +527,7 @@ const BANCO_MODULO_C = [
        "Para votar basta ser ciudadano mexicano con credencial vigente; para ser candidato a Diputado Federal se requiere además ser mexicano por nacimiento, tener 18 años cumplidos el día de la elección (reforma DOF 06-06-2023) y cumplir los demás requisitos del Art. 55 CPEUM.",
        "Para ser candidato a Diputado solo se requiere ser mayor de 18 años y estar registrado ante el INE."],
     c:1,
-    ex:"El Art. 35 reconoce el derecho a votar (ciudadanía + credencial) y a ser votado. Para Diputado Federal el Art. 55 exige: mexicano por nacimiento, 21 años al día de la elección, vecindad en el distrito o la entidad, y no estar en los supuestos de inelegibilidad." },
+    ex:"El Art. 35 reconoce el derecho a votar y a ser votado. Para ser Diputado Federal, el Art. 55 exige (tras la reforma del DOF 06-06-2023): ser mexicano por nacimiento, tener 18 años cumplidos al día de la elección, tener vecindad en el distrito o la entidad, y no estar en los supuestos de inelegibilidad." },
 
   { sa:"1.3", sal:"Ciudadanía",
     ref:"CPEUM (2025), Art. 35, fracc. VI",
