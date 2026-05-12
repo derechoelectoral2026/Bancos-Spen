@@ -701,7 +701,7 @@ const BANCO_MODULO_B = [
   pt:"Lectura e interpretación de tabla",
   q:"¿Qué sección tuvo el mayor porcentaje de participación?",
   o:["Sección 1","Sección 3","Sección 4"], c:0,
-  ex:"S1 = 820/1,000 = 82%. S2 = 630/900 = 70%. S3 = 480/600 = 80%. S4 = 280/400 = 70%. La de mayor participación es <strong>Sección 1 con 82%</strong>."
+  ex:"S1 = 820/1,000 = 82%. S2 = 630/900 = 70%. S3 = 480/600 = 80%. S4 = 280/400 = 70%. La sección con mayor participación es la Sección 1 con un 82%."
 },
 {
   sa:"1.6", sal:"Gráficos y tablas", type:"blank",
