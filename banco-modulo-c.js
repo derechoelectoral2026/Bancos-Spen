@@ -85,7 +85,7 @@ const BANCO_MODULO_C = [
     ref:"CPEUM (2025), Art. 94 — reforma judicial 2024",
     p:"La reforma constitucional de 2024 modificó sustancialmente la integración y el método de designación de los miembros del Poder Judicial Federal, incluyendo a la SCJN.", pt:"Reforma judicial 2024",
     q:"¿Cuál es la diferencia central en el método de integración de la SCJN antes y después de la reforma judicial de 2024?",
-    o:["Antes eran propuestos por el Ejecutivo con ratificación del Senado; tras la reforma son elegidos por voto ciudadano directo.",
+    o:["AAntes eran designados por el Senado a propuesta del Ejecutivo; tras la reforma, son electos por la ciudadanía mediante voto directo de entre las candidaturas postuladas por los Poderes de la Unión.",
        "Antes eran electos popularmente; tras la reforma son designados por el Consejo de la Judicatura.",
        "La reforma solo cambió el número de ministros, no el método de designación."],
     c:0,
