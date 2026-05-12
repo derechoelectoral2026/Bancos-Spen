@@ -111,12 +111,12 @@ const BANCO_MODULO_C = [
     sa:"1.1", sal:"Modelo constitucional",
     ref:"CPEUM, Art. 41, Base VI",
     p:null, pt:null,
-    q:"Conforme a la base VI del artículo 41 de la Constitución Política de los Estados Unidos Mexicanos, para que las violaciones graves en un proceso electoral den lugar a la nulidad de la elección, estas deben acreditarse de manera objetiva y material. Bajo este marco, ¿en qué supuesto se actualiza la presunción legal de que dichas violaciones son determinantes?",
-    o:["Cuando el costo de las violaciones supere el 10% del financiamiento público del partido ganador.",
-       "Cuando la diferencia en la votación obtenida entre el primer y el segundo lugar sea menor al cinco por ciento.",
-       "Cuando las irregularidades se presenten en al menos el veinte por ciento de las secciones electorales del distrito o entidad."],
+    q:"Conforme a la Base VI del artículo 41 de la CPEUM, se presume que las violaciones a la ley electoral son determinantes para el resultado de la elección cuando la diferencia en la votación obtenida entre el primer y el segundo lugar sea:",
+    o:["Menor al diez por ciento.",
+       "Menor al cinco por ciento.",
+       "Igual o menor al tres por ciento."],
     c:1,
-    ex:"El texto constitucional establece una presunción iuris tantum de determinación vinculada a un criterio aritmético: el margen del 5% entre el primer y segundo lugar. No obstante, el sistema exige un estándar probatorio doble: 1) que la violación sea grave y 2) que sea determinante."
+    ex:"Fundamento: Art. 41, Base VI, tercer párrafo de la CPEUM. Dichas violaciones deberán acreditarse de manera objetiva y habitual. Se presume que las violaciones son determinantes cuando la diferencia entre el primer y segundo lugar sea menor al 5%."
   },
   {
     sa:"1.1", sal:"Modelo constitucional",
