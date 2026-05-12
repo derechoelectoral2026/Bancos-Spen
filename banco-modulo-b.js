@@ -87,8 +87,8 @@ const BANCO_MODULO_B = [
     sa:"1.2", sal:"Aritmética", type:"direct",
     p:null, pt:null,
     q:"Un equipo de supervisores trabaja 6.5 horas diarias. En el primer turno trabajan 14 días; en el segundo, 18 días con una reducción de 1.5 horas diarias. Si el pago es $51 por hora, ¿cuál es el pago total por ambos turnos?",
-    o:["$9,231","$9,487.50","$10,012.50"], c:0,
-    ex:"Turno 1: 6.5 x 14 = 91 horas. Turno 2: (6.5-1.5) x 18 = 5 x 18 = 90 horas. Total = 91 + 90 = 181 horas. Pago = 181 x $51 = <strong>$9,231</strong>."
+    o:["$13,575","$11,487.50","$13,012.50"], c:0,
+    ex:"Turno 1: 6.5 x 14 = 91 horas. Turno 2: (6.5-1.5) x 18 = 5 x 18 = 90 horas. Total = 91 + 90 = 181 horas. Pago = 181 x $51 = <strong>$13,575</strong>."
   },
 
   /* ══════════════════════════════════════════
