@@ -31,7 +31,7 @@ const BANCO_MODULO_B = [
     p:"U = {1,2,3,…,15}. A = {x ∈ U | x es par}. B = {x ∈ U | x es múltiplo de 3}.",
     pt:"Complemento de la unión",
     q:"¿Cuántos elementos tiene (A ∪ B)ʹ?",
-    o:["4","5","6"], c:0,
+    o:["4","5","6"], c:1,
     ex:"A = {2,4,6,8,10,12,14} (7 elem). B = {3,6,9,12,15} (5 elem). A∩B = {6,12} (2 elem). |A∪B| = 7+5−2 = 10. (A∪B)ʹ = 15−10 = <strong>5</strong>. Espera: ¿U tiene 15 elementos? Sí: 1 a 15. Vuelve a verificar: (A∪B)ʹ = {1,5,7,11,13} = 5 elementos. Respuesta: <strong>5</strong>."
   },
   {
