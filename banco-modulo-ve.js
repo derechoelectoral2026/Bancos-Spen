@@ -57,10 +57,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Qué requisito fundamental debe cumplir un ciudadano para ser registrado como candidato independiente a Diputado federal?",
     o:["Presentar únicamente su credencial para votar vigente y una solicitud escrita al Consejo Distrital",
-       "Obtener el apoyo ciudadano equivalente al 1% de la lista nominal de electores del distrito correspondiente, conforme al procedimiento y plazos establecidos en la LGIPE",
+       "Obtener el respaldo de una cantidad de ciudadanos equivalente al 2% de la lista nominal del distrito electoral en cuestión.",
        "Contar con el aval de al menos tres partidos políticos que respalden su candidatura ante el INE"],
     c:1,
-    ex:"La LGIPE establece que para ser candidato independiente a Diputado federal se requiere obtener el respaldo de un porcentaje de la lista nominal de electores de la demarcación (1% para diputados), acreditado mediante firmas y reunir los requisitos de elegibilidad. El INE verifica que el proceso de obtención de apoyos cumpla con las reglas de transparencia y límites de gasto establecidos." },
+    ex:"De conformidad con el Artículo 371, párrafo 3 de la Ley General de Instituciones y Procedimientos Electoral (LGIPE). Para la fórmula de diputados de mayoría relativa, la cédula de respaldo deberá contener cuando menos la firma de una cantidad de ciudadanos equivalente al 2% de la lista nominal correspondiente al distrito electoral, con corte al 31 de agosto del año previo al de la elección. Además, debe cumplir con el criterio de representatividad (al menos la mitad de las secciones electorales con el 1% de la lista nominal en cada una).por lo menos la mitad de las secciones electorales que sumen cuando menos el 1% de la lista nominal en cada una de ellas." },
 
   { sa:"1.2", sal:"Candidaturas independientes", area:"Participación política",
     p:null, pt:null,
