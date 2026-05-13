@@ -314,10 +314,10 @@ const BANK = [
   {sa:"4.1",sal:"Acreditación de personas observadoras electorales",area:"Organización de la elección",
    p:null,pt:null,
    q:"¿Cuál es el plazo límite para que las organizaciones presenten su solicitud de acreditación de observadores ante el INE?",
-   o:["Al menos 20 días antes de la jornada electoral, ante el Consejo Distrital o Local correspondiente.",
+   o:["A partir del inicio del proceso electoral y hasta el 30 de abril del año de la elección",
       "En cualquier momento durante el proceso electoral, sin plazo específico.",
       "El mismo día de la jornada electoral, siempre que presenten la documentación completa."],
-   c:0,ex:"Las organizaciones deben solicitar la acreditación de sus observadores con al menos 20 días de anticipación a la jornada electoral, presentando la solicitud ante el Consejo Distrital o Local del INE correspondiente al ámbito donde realizarán la observación, con la documentación que establece la normativa."},
+   c:0,ex:"De conformidad con el artículo 217, párrafo 1, inciso c) de la LGIPE, la solicitud de registro puede presentarse de forma personal o a través de la organización a la que pertenezcan, a partir del inicio del proceso electoral y hasta el 30 de abril del año de la elección, presentando la documentación normativa ante las presidencias de los consejos locales o distritales correspondientes."},
 
   {sa:"4.2",sal:"Casillas electorales",area:"Organización de la elección",
    p:null,pt:null,
