@@ -393,10 +393,10 @@ const Q = [
     p:null, pt:null,
     q:"¿Cómo clasifica el Estatuto del Servicio Profesional Electoral Nacional (SPEN) al cargo de Vocal Ejecutivo de Junta Distrital Ejecutiva?",
     o:["Como personal de libre designación por el Secretario Ejecutivo del INE, sin pertenecer al SPEN",
-       "Como un cargo de la rama administrativa del SPEN, sujeto a ingreso por concurso de oposición, evaluación del desempeño, capacitación continua y permanencia conforme a los principios de mérito, imparcialidad y certeza",
+       "Como un cargo de la función ejecutiva del SPEN, sujeto a ingreso por concurso de oposición, evaluación del desempeño, capacitación continua y permanencia conforme a los principios de mérito, imparcialidad y certeza",
        "Como personal de confianza designado directamente por el Consejo General sin requisitos de ingreso formales"],
     c:1,
-    ex:"De acuerdo con el Estatuto del Servicio Profesional Electoral Nacional y del Personal de la Rama Administrativa, el cargo de Vocal Ejecutivo de Junta Distrital Ejecutiva se clasifica como un puesto de carrera perteneciente a la Rama Ejecutiva." },
+    ex:"De acuerdo con el Estatuto del Servicio Profesional Electoral Nacional, el cargo de Vocal Ejecutivo de Junta Distrital Ejecutiva se clasifica como un puesto de carrera perteneciente a la Función Ejecutiva." },
 
   { sa:"5.2", sal:"Gestión de recursos humanos en el INE", area:"Gestión administrativa institucional",
     p:null, pt:null,
