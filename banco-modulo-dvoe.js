@@ -189,7 +189,7 @@ const BANK = [
    o:["Si llega después de las 18:00 horas y no hay nadie más en fila.",
       "Si no porta su credencial para votar o si su nombre no aparece en el listado nominal de la sección correspondiente, y en el caso de casillas especiales, si ya se agotó el límite de votos.",
       "Si el funcionario de casilla considera que el ciudadano está bajo los efectos del alcohol."],
-   c:1,ex:"Un ciudadano puede ser rechazado si: no presenta su credencial para votar, su nombre no aparece en el listado nominal de esa sección (salvo casillas especiales), o si en casilla especial ya se alcanzó el límite de 300 votos. El funcionario no puede rechazar a un ciudadano por criterios subjetivos."},
+   c:1,ex:"Un ciudadano puede ser rechazado si: no presenta su credencial para votar, su nombre no aparece en el listado nominal de esa sección (salvo casillas especiales), o si en casilla especial ya se alcanzó el límite de 1000 votos. El funcionario no puede rechazar a un ciudadano por criterios subjetivos."},
 
   {sa:"2.5",sal:"Actividades del día de la jornada electoral",area:"Proceso electoral",
    p:null,pt:null,
