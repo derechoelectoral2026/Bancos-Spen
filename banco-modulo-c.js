@@ -86,10 +86,10 @@ const BANCO_MODULO_C = [
     p:"La reforma constitucional de 2024 modificó sustancialmente la integración y el método de designación de los miembros del Poder Judicial Federal, incluyendo a la SCJN.", pt:"Reforma judicial 2024",
     q:"¿Cuál es la diferencia central en el método de integración de la SCJN antes y después de la reforma judicial de 2024?",
     o:["Los Ministros son designados por el Senado a partir de una terna propuesta por la persona titular del Ejecutivo Federal.",
-       "Los Ministros son electos por la ciudadanía mediante voto directo y secreto, a partir de las candidaturas postuladas por los tres Poderes de la Unión.",
+       "Las Ministras y los Ministros son electos por la ciudadanía mediante voto directo y secreto, a partir de candidaturas postuladas por los tres Poderes de la Unión.",
        "La reforma solo cambió el número de ministros, no el método de designación."],
-    c:0,
-    ex:"Artículo 96 de la Constitución Política de los Estados Unidos Mexicanos (CPEUM). Tras la reforma judicial de 2024, se eliminó el sistema de designación (donde el Ejecutivo proponía y el Legislativo decidía) y se sustituyó por un proceso de elección popular. Ahora, los Poderes de la Unión postulan candidaturas y es la ciudadanía quien elige mediante el voto" },
+    c:1,
+    ex:"Artículo 96 de la Constitución Política de los Estados Unidos Mexicanos (CPEUM). Tras la reforma judicial de 2024, el Artículo 96 de la CPEUM eliminó el sistema de designación (donde el Ejecutivo proponía y el Senado decidía) y lo sustituyó por un proceso de elección popular directa, basado en postulaciones realizadas por el Legislativo, Ejecutivo y Judicial." },
 
   { sa:"1.2", sal:"Poder Judicial",
     ref:"CPEUM (2025), Art. 99",
