@@ -1007,7 +1007,7 @@ const BANK = [
    o:["El INE puede atraer estos casos únicamente si existe una denuncia formal presentada por algún partido político afectado",
       "El INE requiere la aprobación de al menos ocho consejeros electorales para ejercer la facultad de atracción por criterio interpretativo",
       "El INE puede intervenir para establecer un criterio uniforme de interpretación que resuelva la contradicción normativa"],
-   c:0,ex:"El INE puede atraer asuntos para sentar criterio de interpretación por su propia determinación cuando detecte contradicciones o inconsistencias, sin requerir denuncia de terceros. La facultad de atracción se activa por la trascendencia del asunto o la necesidad de uniformar criterios; las opciones B y C son afirmaciones correctas sobre esta facultad."},
+   c:1,ex:"El INE puede atraer asuntos para sentar criterio de interpretación por su propia determinación cuando detecte contradicciones o inconsistencias, sin requerir denuncia de terceros. La facultad de atracción se activa por la trascendencia del asunto o la necesidad de uniformar criterios; las opciones B y C son afirmaciones correctas sobre esta facultad."},
 
   {sa:"2.4",sal:"Atribuciones especiales del INE",area:"Proceso electoral",
    p:null,pt:null,
