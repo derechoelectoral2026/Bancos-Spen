@@ -347,7 +347,7 @@ const BANCO_MODULO_B = [
   p:"A = {a, b, c}, B = {b, c, d, e}.",
   pt:"Diferencia simétrica",
   q:"¿Cuántos elementos tiene A △ B?",
-  o:["2","3","4"], c:2,
+  o:["2","3","4"], c:1,
   ex:"A−B = {a} (en A pero no en B). B−A = {d,e} (en B pero no en A). A△B = {a,d,e} → <strong>3 elementos</strong>. c=1."
 },
 
