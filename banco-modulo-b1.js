@@ -509,7 +509,7 @@ const BANCO_MODULO_B = [
   p:null, pt:null,
   q:"El doble de un número más el triple de otro es 23. La diferencia entre el segundo y el primero es 1. ¿Cuánto vale el primer número?",
   o:["3","4","5"], c:1,
-  ex:"Sean x e y los números: 2x+3y = 23 y y−x = 1, de donde y = x+1. Sustituyendo: 2x+3(x+1) = 23 → 2x+3x+3 = 23 → 5x = 20 → x = <strong>4</strong>. Entonces y = 5. Verificación: 2(4)+3(5) = 8+15 = 23 ✓ y 5−4 = 1 ✓."
+  ex:"Solución: Sean x e y los números: 2x + 3y = 23 y y - x = 1, de donde y = x + 1.\nSustituyendo: 2x + 3(x + 1) = 23 -> 2x + 3x + 3 = 23 -> 5x = 20 -> x = 4.\nVerificación: 2(4) + 3(5) = 8 + 15 = 23 y 5 - 4 = 1.✓"
 },
 {
   sa:"1.3", sal:"Álgebra", type:"blank",
