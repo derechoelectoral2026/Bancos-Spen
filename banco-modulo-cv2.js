@@ -1087,12 +1087,12 @@ const BANCO_MODULO_C = [
     sa:"3.2", sal:"Órganos del INE",
     ref:"LGIPE (2024), Arts. 83–90",
     p:null, pt:null,
-    q:"¿Cuál es la importancia de que el titular de la Contraloría General del INE sea designado por la Cámara de Diputados y no por el propio Consejo General?",
+    q:"¿Cuál es la importancia de que el titular del órgano Interno de Control del INE sea designado por la Cámara de Diputados y no por el propio Consejo General?",
     o:["No tiene importancia jurídica; es solo una decisión administrativa sin consecuencias.",
        "Que el titular sea designado por la Cámara de Diputados garantiza su independencia respecto del Consejo General al que fiscaliza, evitando que los consejeros sean a la vez controlados y controladores. Esto fortalece la rendición de cuentas interna y la transparencia del instituto.",
-       "Significa que la Contraloría está subordinada al Poder Legislativo y no al INE."],
+       "Significa que el Órgano Interno de Control está subordinada al Poder Legislativo y no al INE."],
     c:1,
-    ex:"La designación del Contralor General por la Cámara de Diputados es un mecanismo de control externo de la legalidad interna: el INE no puede designar a quien lo controla. Esto garantiza independencia."
+    ex:"La designación del Titular del Órgano Interno de Control por la Cámara de Diputados es un mecanismo de control externo de la legalidad interna: el INE no puede designar a quien lo supervisa. Esto garantiza independencia."
   },
   {
     sa:"3.2", sal:"Órganos del INE",
