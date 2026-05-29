@@ -58,7 +58,7 @@ const BANCO_MODULO_C = [
     pt:"Facultades exclusivas de cada cámara",
     q:"¿Cuál de las siguientes opciones contiene únicamente facultades exclusivas del Senado conforme al Art. 76 CPEUM?",
     o:["Aprobar el Presupuesto de Egresos, ratificar nombramientos del Ejecutivo y declarar la desaparición de poderes en una entidad.",
-       "Fiscalizar la cuenta pública, nombrar al contralor del INE y emitir el decreto de extinción de un partido político.",
+       "Fiscalizar la cuenta pública, nombrar al Titular del Órgano Interno de Control del INE y emitir el decreto de extinción de un partido político.",
        "Ratificar los tratados internacionales suscritos por el Ejecutivo, aprobar el nombramiento del Fiscal General de la República y declarar la desaparición de poderes de una entidad federativa."],
     c:2,
     ex:"Art. 76 CPEUM: son facultades exclusivas del Senado: ratificar tratados internacionales, aprobar la designación del Fiscal General, declarar la desaparición de poderes en una entidad y nombrar provisionalmente al gobernador sustituto. Aprobar el Presupuesto y fiscalizar la cuenta pública son exclusivas de Diputados (Art. 74)."
