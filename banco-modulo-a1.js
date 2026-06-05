@@ -175,7 +175,7 @@ const BANCO_MODULO_A = [
   q:"Relaciona cada paradigma de investigación con su objetivo central según el texto.",
   leftItems:["Positivista","Interpretativo","Crítico"],
   rightItems:["Transformar estructuras sociales inequitativas","Cuantificar y predecir","Comprender el significado que los actores dan a su realidad"],
-  correctPairs:[[0,0],[1,1],[2,2]],
+  correctPairs:[[0,1],[1,2],[2,0]],
   expl:"Positivista = cuantificar y predecir; Interpretativo = comprender significados; Crítico = transformar estructuras."
 },
 {
