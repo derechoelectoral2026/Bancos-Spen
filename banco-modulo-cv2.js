@@ -209,10 +209,10 @@ const BANCO_MODULO_C = [
     p:null, pt:null,
     q:"De acuerdo con el procedimiento establecido en la fracción I del artículo 96 de la Constitución, ¿cuál es el plazo y el momento procesal en el que el Senado de la República debe publicar la convocatoria para la integración del listado de candidaturas a cargos del Poder Judicial de la Federación?",
     o:["Dentro de los quince días naturales posteriores a la conclusión del proceso electoral federal ordinario anterior.",
-       "Dentro de los treinta días naturales siguientes a la instalación del primer periodo ordinario de sesiones del año anterior al de la elección que corresponda.",
+       "a más tardar el treinta de abril del año anterior al de la elección judicial que corresponda.",
        "A más tardar noventa días antes del inicio del proceso electoral, previa consulta con el Instituto Nacional Electoral."],
     c:1,
-    ex:"El artículo 96 constitucional establece un cronograma estricto. La publicación de la convocatoria es el acto del procedimiento y debe ocurrir con una antelación considerable (el año previo a la elección)."
+    ex:"El artículo 96 constitucional establece un cronograma estricto. La publicación de la convocatoria es el acto del procedimiento y debe ocurrir con una antelación considerable (a más tardar el treinta de abril del año anterior al de la elección judicial que corresponda)."
   },
   {
     sa:"1.2", sal:"Poder Judicial",
